@@ -1,0 +1,44 @@
+<div class="popup_ui type_modal pop_periodic_pw_change" style="display: none;">
+    <div class="dim_full"></div>
+    <div class="pop_container">
+        <div class="pop_layer">
+            <div class="pop_tit2">비밀번호 변경</div>
+            <div class="pop_body">
+                <p class="con_txt">3개월 이상 동일한 비밀번호를 사용 중입니다.<br>회원님의 소중한 개인정보보호를 위해 주기적으로 비밀번호를 변경해주시기 바랍니다.</p>
+									
+                <fieldset>
+                    <legend>새 비밀번호 입력</legend>
+
+                    <!-- 비밀번호 -->
+                    <div class="wrap_inp type2">
+                        <label for="newPassword" class="inp_tit">새 비밀번호</label>
+                        <div class="inp_bundle">
+                            <input type="password" id="newPassword" class="inp flex" />
+                        </div>
+                        <ul class="bullet_type1 mark1 inp_mt">
+                            <li>영문, 숫자, 특수문자를 포함 8~30 자리로 입력해주세요.</li>
+                            <li>연속된 3자리 이상의 숫자, 문자는 사용할 수 없습니다.</li>
+                        </ul>
+                    </div>
+                    <!--// 비밀번호 -->
+
+                    <!-- 비밀번호 확인 -->
+                    <div class="wrap_inp type2">
+                        <label for="newPasswordCheck" class="inp_tit">새 비밀번호 확인</label>
+                        <div class="inp_bundle">
+                            <input type="password" id="newPasswordCheck" class="inp flex" />
+                        </div>
+                        <p class="t_error">동일한 값을 입력해주시기 바랍니다.</p>
+                    </div>
+                    <!--// 비밀번호 확인 -->
+                </fieldset>
+                
+                <div class="btn_area btn_ac">
+                    <button type="button" class="btn_typeA2"><span>확인</span></button>
+                </div>
+                
+            </div>
+            <button class="btn_pop_close" type="button" onclick="commonPub.layerPopClose(this);"><span class="hidden">레이어 닫기</span></button>
+        </div>
+    </div>
+</div>

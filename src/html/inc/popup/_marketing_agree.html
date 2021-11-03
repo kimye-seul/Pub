@@ -1,0 +1,38 @@
+<div class="popup_ui type_modal pop_marketing_agree" style="display: none;">
+    <div class="dim_full"></div>
+    <div class="pop_container">
+        <div class="pop_layer">
+            <div class="pop_tit2">마케팅 수신 동의</div>
+            <div class="pop_body">
+                <!-- 
+                    211026 퍼블 수정 
+                    pop_body > txt 텍스트 변경
+                    변경한 txt와 btn_ac를 제외한 하단 컨텐츠들 모두 제거
+
+                    211027 퍼블 수정
+                    txt의 <br> 의 클래스 "mo_none" 제거
+                -->
+                <p class="txt">
+                    “마케팅 정보(SMS,E-mail) 미수신시 <br>
+                    신규회원을 위한 포인트 적립 혜택을 안내드릴 수 없습니다.<br>
+                    그대로 진행하시겠습니까?”
+                </p>
+                <!-- <p class="box_tit">관련 약관</p>
+                <div class="box box_type2">
+                    <a href="#">마케팅을 위한 개인정보 수집.이용 동의</a>
+                </div>
+                <p class="txt">관련 선택 약관에 동의하시겠습니까?<br>취소 시, 선택된 마케팅 정보 수신동의가 취소됩니다.</p> -->
+
+                <div class="btn_ac">
+                    <!-- 
+                        211026 퍼블 수정 
+                        btn_typeA1 문구 변경 '최소' -> '취소'
+                    -->
+                    <button type="button" class="btn_typeA1" onclick="commonPub.layerPopClose(this);"><span>취소</span></button>
+                    <button type="button" class="btn_typeA2"><span>동의</span></button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

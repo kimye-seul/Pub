@@ -1,0 +1,80 @@
+<div class="popup_ui type_modal pop_verify_phone" style="display: none;">
+    <div class="dim_full"></div>
+    <div class="pop_container">
+        <div class="pop_layer">
+            <div class="pop_tit2">가입 휴대폰 정보 인증</div>
+            <div class="pop_body">
+                
+                <div class="wrap_info_cert">
+                    <fieldset>
+                        <legend>가입 휴대폰 정보 입력</legend>
+
+                        <!-- 이름 -->
+                        <div class="wrap_inp">
+                            <label for="username" class="inp_tit">이름</label>
+                            <!-- input에 값을 잘 못 입력하면 .inp_bundle에 클래스 "error" 추가해주세요. (포커스되고 값이 입력되면 "focus" 클래스가 붙음) -->
+                            <div class="inp_bundle">
+                                <input type="text" id="username" class="inp flex" />
+                            </div>
+                            <p class="t_error">이름을 입력해주세요.</p>
+                        </div>
+                        <!--// 이름 -->
+
+                        <!-- 생년월일 -->
+                        <div class="wrap_inp">
+                            <label for="birthday" class="inp_tit">생년월일 (8자리)</label>
+                            <div class="inp_bundle">
+                                <input type="text" id="birthday" class="inp flex" inputmode="numeric" />
+                            </div>
+                            <p class="t_error">생년월일을 입력해주세요.</p>
+                        </div>
+                        <!--// 생년월일 -->
+                        
+                        <!-- 휴대폰번호 -->
+                        <div class="wrap_inp">
+                            <label for="phoneNumber" class="inp_tit">휴대폰 번호</label>
+                            <div class="tel_bundle">
+                                <div class="inp_bundle">
+                                    <select class="select flex">
+                                        <option value="">010</option>
+                                        <option value="">011</option>
+                                    </select>
+                                </div>
+                                <div class="inp_bundle">
+                                    <input type="tel" id="phoneNumber" class="inp flex" placeholder="" />
+                                </div>
+                                <button type="button" class="btn_cert btn_typeC2"><span>인증번호 요청</span></button>
+                            </div>
+                            <p class="t_error">휴대폰 번호를 입력해주세요.</p>
+                            <p class="t_error">해당 번호로 인증번호를 발송했습니다.</p>
+                        </div>
+                        <!--// 휴대폰번호 -->
+
+                        <!-- 인증번호 -->
+                        <div class="wrap_inp">
+                            <label for="authNumber" class="inp_tit">인증번호</label>
+                            <div class="inp_bundle">
+                                <input type="text" id="authNumber" class="inp flex" inputmode="numeric" />
+                                <div class="timer">04:55</div>
+                            </div>
+                            <p class="t_error">인증번호를 입력하세요.</p>
+                        </div>
+                        <!--// 인증번호 -->
+                    </fieldset>
+                </div>
+
+                <div class="suggestion">
+                    <p class="cmt_guide1 mark1">회원 아이디가 기억나지 않으시나요?</p>
+                    <a href="#">아이디 찾기</a>
+                </div>
+
+                <div class="btn_area btn_ac">
+                    <button type="button" class="btn_typeA2"><span>확인</span></button>
+                </div>
+                
+            </div>
+
+            <button class="btn_pop_close" type="button" onclick="commonPub.layerPopClose(this);"><span class="hidden">레이어 닫기</span></button>
+        </div>
+    </div>
+</div>
