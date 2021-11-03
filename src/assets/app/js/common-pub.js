@@ -10,6 +10,7 @@ var commonPub = {
 			$(window).off('resize').on('resize', commonPub.resizeEvent);
 			$(window).trigger('resize');
 
+			commonPub.layout();
 			commonPub.readonlyBackspaceOff();
 			commonPub.inputBundle();
 			commonPub.accordianList();
