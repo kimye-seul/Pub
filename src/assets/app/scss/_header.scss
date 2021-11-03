@@ -1,0 +1,585 @@
+/*------------------- header ---------------------*/
+.scrollOn {
+    
+}
+
+$topBnr-height1: 150px;
+.hasTopBnr {
+    .page_top_banner {
+        display: block;
+    }
+    #header {
+        top: $topBnr-height1; // 배너높이
+    }
+    #contents {
+        padding-top: calc(#{$topBnr-height1} + #{$header-height});
+    }
+    #lnb {
+        top: $topBnr-height1;
+
+        .top_area {
+            top: $topBnr-height1;
+        }
+    }
+    // #quickMenu {
+    //     bottom: calc(50% - 50px);
+    // }
+
+    @include tablet {
+        #contents {
+            padding-top: calc(#{$topBnr-height1} + #{$header-height-mo});
+        }
+        .btn_hd_menu {
+            top: $topBnr-height1;
+        }
+    }
+}
+
+#header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	min-width: 280px;
+	height: $header-height;
+	background: rgba(255,255,255,1);
+    border-bottom: 1px solid rgba(238,238,238,1);
+    transition: border .3s;
+
+    // @at-root .scrollOn & {
+    //     position: fixed;
+    //     border-bottom: 1px solid rgba(238,238,238,1);
+    // }
+    .wrap_header {
+        display: flex;
+        position: relative;
+        max-width: 1284px;
+        height: 100%;
+        padding: 40px 30px 0 30px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        margin-right: auto;
+        padding-top: 20px;
+        a {
+            display: block;
+            width: 90px;
+            height: 31px;
+            @include bgUrl('common/logo1.png');
+        }
+    }
+
+    #gnb {
+        position: relative;
+        // border: 1px solid red;
+        > ul {
+            height: 100%;
+
+            > li {
+                position: relative;
+                float: left;
+                width: auto;
+                height: 100%;
+                padding-right: 110px;
+                transition: padding .3s;
+
+                @include media(1230px) {
+                    padding-right: 80px;
+                }
+
+                &:last-child {
+                    padding-right: 0;
+                }
+
+                .depth1 {
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+
+                    a {
+                        position: relative;
+                        @include font-sub(600, 22px);
+    
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            right: -7px;
+                            top: -4px;
+                            width: 6px;
+                            height: 6px;
+                            border-radius: 50%;
+                            background: $c-blue1;
+                            opacity: 0;
+                        }    
+                    }
+                    &.on {
+                        a {
+                            font-weight: 800;
+                            color: $c-blue1;
+                            transition: .3s;
+    
+                            &::before {
+                                opacity: 1;
+                                transition: .3s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .depth2 {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            padding-top: 15px;
+            width: 100%;
+
+            > li {
+                margin-top: 20px;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+
+                > a {
+                    @include font(500, 16px);
+                    letter-spacing: -0.8px;
+
+                    &:hover {
+                        font-weight: 700;
+                        color: $c-blue1;
+                    }
+                }
+            }
+        }
+    }
+    .gnb_menu_layer {
+        display: none;
+        max-width: 1920px;
+        margin: 0 auto;
+
+        .menu_bg {
+            height: 335px;
+            background-color: #fff;
+        }
+        .gnb_banner {
+            display: flex;
+            justify-content: center;
+            background: #fff;
+
+            a {
+                display: block;
+                flex: 1 1 0;
+                // max-width: 50%;
+
+                .img {
+                    display: block;
+                    width: 100%;
+                    height: 140px;
+                    @include bgCover;
+                    transition: .3s;
+
+                    @include media(1230px) {
+                        height: 110px;
+                    }
+                }
+                &:nth-child(1) .img {
+                    background-position: right top;
+                }
+                &:nth-child(2) .img {
+                    background-position: left top;
+                }
+                // img {
+                //     max-width: 100%;
+                // }
+            }
+        }
+    }
+	
+    .hd_util_pc {
+        position: absolute;
+        right: 30px;
+        top: 0;
+        
+        ul {
+            display: flex;
+            align-items: center;
+            height: 40px;
+
+            li {
+                margin-left: 18px;
+
+                a,
+                button {
+                    @include font(400, 13px, #999);
+                    letter-spacing: -0.8px;
+
+                    &.app_down {
+                        font-weight: 700;
+                        color: $c-blue1;
+                        padding-right: 12px;
+                        @include bgUrl('common/ic_download1.png', right center);
+                    }
+                }
+            }
+        }
+    }
+
+    
+}
+.btn_hd_menu,
+#lnb {
+    display: none;
+}
+
+
+
+@include tablet {
+    #header {
+        height: $header-height-mo;
+        // border-bottom: 1px solid rgba(238,238,238,1);
+        
+        .wrap_header {
+            padding: 0 20px;
+            height: 100%;
+        }
+        .logo {
+            padding-top: 17px;
+
+            a {
+                width: 76px;
+                height: 26px;
+                @include bgUrl('common/mo/logo1.png', center center, contain);
+            }
+        }
+        #gnb,
+        .gnb_menu_layer,
+        .hd_util_pc {
+            display: none;
+        }
+        .brand_ci {
+            display: flex;
+            align-items: center;
+
+            img {
+                max-height: 40px;
+            }
+        }
+    }
+
+    /* 메인페이지 헤더 */
+    // .mainWrapper {
+    //     #header {
+    //         background-color: rgba(255,255,255,0);
+    //         border-bottom: none;
+    //         transition: background-color .3s;
+
+    //         @at-root .scrollOn & {
+    //             background-color: rgba(255,255,255,1);
+    //         }
+    //     }
+    // }
+    
+    /* 모바일 메뉴버튼 */
+    .btn_hd_menu {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 0;
+        transform: translateY(15px);
+        display: block;
+        width: 30px;
+        height: 30px;
+
+        @at-root .scrollOn & {
+            position: fixed;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 5px;
+            top: 14px;
+            width: 20px;
+            height: 3px;
+            background: #000;
+            transition: .3s;
+        }
+
+        span {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                left: 5px;
+                width: 20px;
+                height: 3px;
+                background: #000;
+                transition: .3s;
+            }
+            &::before {
+                top: 6px;
+            }
+            &::after {
+                bottom: 5px;
+            }
+        }
+
+        &.on {
+            &::before {
+                opacity: 0;
+                transform: translateX(5px);
+            }
+            span {
+                &::before {
+                    width: 26px;
+                    transform: rotate(45deg) translate(4px, 7px);
+                }
+                &::after {
+                    width: 26px;
+                    transform: rotate(-45deg) translate(4px, -7px);
+                }
+            }
+        }
+    }
+
+    #lnb {
+        // display: block;
+        position:fixed;
+        right:0;
+        top:0;
+        width:100%;
+        height:100%;
+        
+        .dim {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width:100%;
+            height:100%;
+            background:rgba(0,0,0,0.8);
+        }
+        .container {
+            position: absolute;
+            right: -100%;
+            top: 0;
+            width: 100%;
+            max-width: 500px;
+            height: 100%;
+            background: #fff;
+            padding-top: $header-height-mo;
+            overflow-y: auto;
+        }
+        .top_area {
+            position: fixed;
+            right: -100%;
+            top: 0;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 500px;
+            height: $header-height-mo;
+            padding: 0 20px;
+            background: #fff;
+
+            .logo {
+                display: block;
+                width: 76px;
+                height: 26px;
+                @include bgUrl('common/mo/logo1.png', center center, contain);
+                margin-right: auto;
+            }
+            .util {
+                margin-right: 40px;
+                li {
+                    position: relative;
+                    float: left;
+                    padding-left: 10px;
+                    margin-left: 8px;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        width: 2px;
+                        height: 2px;
+                        background-color: #111;
+                        border-radius: 50%;
+                    }                    
+                    &:first-child {
+                        padding-left: 0;
+                        margin-left: 0;
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+                a,
+                button {
+                    @include font(500, 13px);
+                    letter-spacing: -0.8px;
+
+                    &.app_down {
+                        font-weight: 500;
+                        color: $c-blue1;
+                        padding-right: 13px;
+                        @include bgUrl('common/mo/ic_download1.png', right center, auto 11px);
+                    }
+                }
+            }
+        }
+
+        .my_area {
+            padding: 0 20px;
+            .txt {
+                @include font(400, 16px);
+                letter-spacing: -0.8px;
+                margin-top: 20px;
+
+                a,
+                span,
+                em {
+                    @include font-in;
+                }
+                em {
+                    font-weight: 900;
+                }
+            }
+            .member {
+                ul {
+                    margin-top: 25px;
+                }
+                li {
+                    float: left;
+                    width: calc(100% / 3);
+                    border-left: 1px solid #eee;
+
+                    &:first-child {
+                        border-left: none;
+                    }
+                    a {
+                        display: block;
+                        @include font(400, 12px, #808080);
+                        text-align: center;
+                        padding-top: 45px;
+                    }
+                    &:nth-child(1) a {
+                        @include bgUrl('common/ic_lnb_my.png', top center, auto 36px);
+                    }
+                    &:nth-child(2) a {
+                        @include bgUrl('common/ic_lnb_coupon.png', top center, auto 36px);
+                    }
+                    &:nth-child(3) a {
+                        @include bgUrl('common/ic_lnb_event.png', top center, auto 36px);
+                    }
+                }
+            }
+        }
+
+        .app_area {
+            margin-top: 30px;
+
+            a {
+                display: block;
+                @include font(500, 13px);
+                text-align: center;
+                background: #f1f3ff;
+                padding: 12px 20px;
+                > span {
+                    display: inline-block;
+                    @include font-in;
+                    padding: 9px 55px 9px 0;
+                    @include bgUrl('common/ic_app1.png', right center, 30px);
+                }
+            }
+        }
+
+        #mobileGnb {
+            padding: 0 20px 35px;
+            > ul {
+                position: relative;
+
+                > li {
+                    margin-top: 30px;
+                }
+                .depth1 {
+                    a,
+                    span {
+                        position: relative;
+                        display: inline-block;
+                        @include font-sub(800, 20px);
+                        cursor: pointer;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            right: -6px;
+                            top: -4px;
+                            width: 6px;
+                            height: 6px;
+                            border-radius: 50%;
+                            background: $c-blue1;
+                            opacity: 0;
+                        }
+                    }
+                    &.on {
+                        a,
+                        span {
+                            font-weight: 800;
+                            color: $c-blue1;
+                            transition: .3s;
+    
+                            &::before {
+                                opacity: 1;
+                                transition: .3s;
+                            }
+                        }
+                    }
+                }
+                .depth2 {
+                    display: none;
+                    position: absolute;
+                    left: 45%;
+                    top: 0;
+
+                    li {
+                        margin-top: 25px;
+
+                        &:first-child {
+                            margin-top: 0;
+                        }
+                        a {
+                            display: inline-block;
+                            @include font(400, 16px);
+                            letter-spacing: -0.8px;
+                        }
+                    }
+                }
+            } 
+        }
+
+        .bnr_area {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    // #lnb end
+}
+// tablet end
+
+
+
+@include mobile {
+
+}
+

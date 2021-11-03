@@ -1,0 +1,84 @@
+$font-family: 'Noto Sans KR';
+$font-family-sub: 'HGGGothicssi';
+
+@mixin font($weight, $size, $color: $c-basic) {
+	font-family: $font-family;
+	font-weight: $weight;
+	font-size: $size;
+	color: $color;
+}
+@mixin font-sub($weight, $size, $color: $c-basic) {
+	font-family: $font-family-sub;
+	font-weight: $weight;
+	font-size: $size;
+	color: $color;
+}
+
+@mixin font-in {
+	font-family: inherit;
+	font-weight: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	letter-spacing: inherit;
+}
+
+@mixin bgCover {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+@mixin bgContain {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+@mixin bgUrl($image, $position: 0 0, $size: auto) {
+	$img-root: '/assets/app/img/';
+
+	background: {
+		image: url($img-root + $image);
+		repeat: no-repeat;
+		size: $size;
+		position: $position;
+	}	
+}
+
+
+
+// Break Point
+$mobile: 768px;
+$tablet: 1024px; 
+ 
+@mixin mobile {
+	@media screen and (max-width: #{$mobile}) {
+		@content;
+	}
+}
+@mixin tablet {
+	@media screen and (max-width: #{$tablet}) {
+		@content;
+	}
+}
+
+// 주요분기 외
+@mixin media($device) {
+	@media screen and (max-width: $device ) {
+		@content;
+	}
+}
+
+// ios 
+@mixin ios {
+	@supports (-webkit-touch-callout: none) {
+		@content;
+	}
+}
+
+// android
+@mixin android {
+	@supports not (-webkit-touch-callout: none) {
+		@content;
+	}
+}

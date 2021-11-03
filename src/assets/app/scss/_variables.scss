@@ -1,0 +1,24 @@
+
+// 블랙, 그레이 칼라변수는 텍스트에만 적용
+// 라인, 백그라운드 등의 블랙 칼라는 개별적으로 #000 적용.
+$c-basic : #111;
+$c-gray1 : #333;
+$c-gray2 : #666;
+$c-gray3 : #999;
+ 
+
+// 포인트 칼라는 텍스트 외 배경, 라인 등 모두 변수 적용 가능.
+$c-blue1: #4e2bf4;
+$c-blue2: #603de3;
+$c-blue3: #492ce8;
+$c-red1: #ff481e;
+
+$c-naver: #00c850;
+$c-kakao: #ffe600;
+
+// input field bg
+$c-field: #f5f5f5;
+ 
+
+$header-height: 120px;
+$header-height-mo: 60px;

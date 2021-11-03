@@ -1,0 +1,2130 @@
+/*------------------- 알림 팝업 공통 ---------------------*/
+.popup_ui {
+    .alert_common {
+        .tit {
+            @include font(700, 26px);
+            
+            em {
+                @include font-in;
+                color: $c-blue1;
+            }
+        }
+        .t_txt1 {
+            margin-top: 25px;
+            em {
+                @include font-in;
+                color: $c-basic;
+            }
+        }
+        .btn_ac {
+            margin-top: 45px;
+        }
+    
+        @include mobile {
+            .tit {
+                font-size: 16px;
+            }
+            .t_txt1 {
+                margin-top: 15px;
+            }
+            .btn_ac {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+
+
+/*------------------- 영상팝업 ---------------------*/
+.pop_video {
+    .pop_layer {
+        max-width: 1104px !important;
+    }
+    .btn_ac {
+        margin-top: 40px;
+
+        a,
+        button {
+            width: 220px;
+        }
+    }
+
+    @include mobile {
+        .pop_tit {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+/*------------------- 쿠폰상세 ---------------------*/
+.pop_coupon_detail {
+    .pop_layer {
+        padding: 0 !important;
+    }
+    .coupon_area {
+        padding: 60px 0 30px;
+        background: #e8ebff;
+        border-radius: 16px 16px 0 0;
+
+        @include mobile {
+            padding: 45px 30px 30px 35px;
+        }
+        @include media(350px) {
+            padding: 45px 20px 30px 20px;
+        }
+
+        .box_coupon {
+            .d_day {
+                width: 43px;
+                height: 26px;
+                line-height: 26px;
+                font-size: 12px;
+
+                @include mobile {
+                    top: 10px;
+                    width: 34px;
+                    height: 20px;
+                    line-height: 20px;
+                    font-size: 10px;
+                }
+            }
+        }
+        .box_coupon {
+            max-width: 365px;
+            margin: 0 auto;
+
+            .subject {
+                font-size: 16px;
+                line-height: 20px;
+
+                &.elps2 {
+                    min-height: 40px;
+                }
+            }
+            .date {
+                font-size: 13px;
+            }
+
+            @include mobile {
+                .subject {
+                    font-size: 12px;
+                    line-height: 16px;
+
+                    &.elps2 {
+                        min-height: 32px;
+                    }
+                }
+                .date {
+                    font-size: 10px;
+                }
+            }
+            // @include media(350px) {
+            //     .subject {
+            //         font-size: 14px;
+            //     }
+            //     .date {
+            //         font-size: 9px;
+            //     }
+            // }
+        }
+
+    }
+    .content_area {
+        padding: 0 55px 60px;
+        
+        .detail_info {
+            height: 380px;
+            margin-right: -55px;
+            overflow-y: auto;
+            padding: 50px 55px 0 0;
+        }
+        .btn_ac {
+            margin-top: 50px;
+            
+            .btn_typeA2 {
+                width: 200px;
+            }
+        }
+
+        @include mobile {
+            padding: 0 20px 40px;
+
+            .detail_info {
+                height: 280px;
+                margin-right: -20px;
+                overflow-y: auto;
+                padding: 25px 20px 0 0;
+            }
+            .btn_ac {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+
+/*------------------- 가입회원 알림팝업 ---------------------*/
+.pop_registered_member {
+    .tit {
+        @include font(700, 26px);
+        
+        em {
+            @include font-in;
+            color: $c-blue1;
+        }
+    }
+    .t_txt1 {
+        margin-top: 25px;
+    }
+    .btn_ac {
+        margin-top: 45px;
+    }
+
+    @include mobile {
+        .tit {
+            font-size: 16px;
+        }
+        .t_txt1 {
+            margin-top: 15px;
+        }
+        .btn_ac {
+            margin-top: 30px;
+        }
+    }
+}
+
+
+/*------------------- 약관동의 ---------------------*/
+.pop_terms {
+    .terms_cont {
+        max-height: 460px;
+    }
+    .btn_ac {
+        margin-top: 50px;
+        a,
+        button {
+            width: 180px;
+        }
+    }
+
+    @include mobile {
+        .terms_cont {
+            max-height: 250px;
+        }
+        .btn_ac {
+            margin-top: 25px;
+        }
+    }
+}
+
+
+/*------------------- 마케팅 수신 동의 ---------------------*/
+.pop_marketing_agree {
+    .pop_tit2 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    p.txt {
+        @include font(400, 18px, #808080);
+        text-align: center;
+    }
+    // .box_tit {
+    //     @include font(700, 22px);
+    //     margin: 30px 0 15px;
+    // }
+    // .box {
+    //     padding: 25px ​40px;
+    //     margin-bottom: 35px;
+    //     a,
+    //     button {
+    //         @include font(700, 18px);
+    //         text-decoration: underline;
+    //     }
+    // }
+    .btn_ac {
+        margin-top: 50px;
+
+        a,
+        button {
+            margin-left: 10px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    @include mobile {
+        .pop_tit2 {
+            margin-bottom: 15px;
+        }
+        p.txt {
+            @include font(400, 14px, $c-gray1);
+        }    
+        // .box_tit {
+        //     @include font(700, 14px);
+        //     margin: 25px 0 10px;
+        // }
+        // .box {
+        //     padding: 15px 20px 17px;
+        //     margin-bottom: 25px;
+        //     a,
+        //     button {
+        //         @include font(700, 14px);
+        //     }
+        // }
+        .btn_ac {
+            margin-top: 25px;
+    
+            a,
+            button {
+                margin-left: 15px;
+    
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+
+/*------------------- 탈퇴진행 ---------------------*/
+.pop_member_resign {
+    .pop_tit {
+        font-size: 26px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .pop_body {
+        .desc1 {
+            text-align: center;
+            @include font(400,18px,$c-gray3);
+        }
+        .btn_area.btn_ac {
+            margin-top: 45px;
+
+            a,button {
+                margin-left: 10px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+
+        }
+    }
+
+    @include mobile {
+        .pop_tit {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .pop_body {
+            .desc1 {
+                font-size: 12px;
+                line-height: 20px;
+            }
+            .btn_area.btn_ac {
+                margin-top: 35px;
+    
+                a,button {
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/*------------------- 가입 휴대폰 정보 인증 ---------------------*/
+.pop_verify_phone,
+.pop_verify_email {
+    &.type_modal {
+        .pop_layer {
+            max-width: 810px;
+            padding: 60px;
+        }
+    }
+    .wrap_info_cert {
+        margin-top: 50px;
+    }
+    .suggestion {
+        display: flex;
+        border-top: 1px solid #ededed;
+        padding-top: 35px;
+        margin-top: 40px;
+
+        a {
+            @include font(400, 16px, $c-blue1);
+            line-height: 1.4;
+            letter-spacing: -0.5px;
+            margin-left: 50px;
+        }
+    }
+    .btn_area {
+        margin-top: 60px;
+    }
+    @include mobile {
+        .wrap_info_cert {
+            margin-top: 30px;
+        }
+        .suggestion {
+            padding-top: 28px;
+            margin-top: 32px;
+
+            a {
+                font-size: 12px;
+                margin-left: 25px;
+                white-space: nowrap;
+            }
+        }
+        .btn_area {
+            margin-top: 30px;
+        }
+    }
+}
+.pop_verify_phone {
+    
+    .tel_bundle {
+        position: relative;
+        .inp_bundle {
+            &:first-child {
+                max-width: 135px;
+                margin-right: 24px;
+            }
+        }
+        .btn_cert {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+    }
+    
+    @include mobile {
+        .tel_bundle {
+            padding-bottom: 65px;
+
+            .inp_bundle {
+                &:first-child {
+                    max-width: 80px;
+                    margin-right: 17px;
+                }
+            }
+            .btn_cert {
+                position: absolute;
+                right: 0;
+                top: auto;
+                bottom: 0;
+                width: 100%;
+                height: 50px;
+                line-height: 48px;
+                border: 1px solid $c-blue1;
+                color: $c-blue1;
+                font-size: 14px;
+                background: transparent;
+            }
+        }
+    }
+}
+
+
+
+/*------------------- 우편번호 검색 ---------------------*/
+.pop_addr_search {
+    .pop_layer {
+        max-width: 810px!important;
+        padding: 60px!important;
+    }
+    .pop_tit2 {
+        margin-bottom: 35px;
+    }
+    .wrap_tab {
+        .tab {
+            float: left;
+            width: auto;
+            height: 50px;
+            @include font-sub(600, 20px, $c-gray3);
+            line-height: 50px;
+            padding: 0 30px;
+            background: #eee;
+            border-radius: 50px;
+            margin-left: 24px;
+            > span {
+                @include font-in;
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+            &.active {
+                color: #fff;
+                background: $c-blue1;
+            }
+        }
+    }
+    .tab_con {
+        margin-top: 40px;
+        border-top: 1px solid #ededed;
+        padding-top: 35px;
+    }
+    .wrap_rdo {
+        margin-bottom: 35px;
+        .radio_ui {
+            margin-right: 40px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .txt {
+        @include font(400, 18px, #808080);
+    }
+    .search_area {
+        margin-top: 25px;
+
+        .btn_typeC2 {
+            width: 90px;
+        }
+    }
+    .result_area {
+        margin-top: 30px;
+        border-top: 2px solid $c-gray1;
+        border-bottom: 1px solid $c-gray3;
+
+        .t_head {
+            border-bottom: 1px solid #eee;
+            
+            .tit {
+                display: inline-block;
+                @include font(800, 16px, $c-gray1);
+                padding: 20px 40px;
+            }
+        }
+        .t_body {
+            max-height: 285px;
+            overflow-y: auto;
+            ul {
+                padding: 20px 0;
+            }
+            li {
+                margin-top: 20px;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+                &::after {
+                    content: "";
+                    display: block;
+                    overflow: hidden;
+                    clear: both;
+                }
+            }
+            .zip,
+            .addr {
+                float: left;
+                @include font(400, 16px, $c-gray1);
+            }
+            .zip {
+                width: 140px;
+                text-align: center;
+            }
+            .addr {
+                width: calc(100% - 140px);
+                padding-left: 40px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .no_data {
+            @include font(400, 16px, $c-gray1);
+            text-align: center;
+        }
+    }
+
+    @include mobile {
+        .pop_layer {
+            padding: 40px 20px !important;
+        }
+        .pop_tit2 {
+            margin-bottom: 20px;
+        }
+        .wrap_tab {
+            .tab {
+                height: 35px;
+                font-size: 14px;
+                line-height: 35px;
+                padding: 0 20px;
+                margin-left: 12px;
+            }
+        }
+        .tab_con {
+            margin-top: 20px;
+            padding-top: 20px;
+        }
+        .wrap_rdo {
+            margin-bottom: 20px;
+            .radio_ui {
+                margin-right: 20px;
+            }
+        }
+        .txt {
+            font-size: 14px;
+        }
+        .search_area {
+            margin-top: 15px;
+    
+            .btn_typeC2 {
+                width: auto;
+            }
+        }
+        .result_area {
+            margin-top: 20px;
+    
+            .t_head {
+                .tit {
+                    display: inline-block;
+                    font-size: 14px;
+                    padding: 0;
+                    
+                    &:first-child {
+                        padding: 12px 20px;
+                    }
+                }
+            }
+            .t_body {
+                max-height: 200px;
+
+                ul {
+                    padding: 12px 0;
+                }
+                li {
+                    margin-top: 12px;
+                }
+                .zip,
+                .addr {
+                    font-size: 14px;
+                }
+                .zip {
+                    width: 90px;
+                }
+                .addr {
+                    width: calc(100% - 90px);
+                    padding-left: 0;
+                }
+            }
+            .no_data {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+
+
+/*------------------- 참여사별 혜택 ---------------------*/
+.pop_more_benefit {
+    .pop_layer {
+        max-width: 808px!important;
+        padding: 55px 50px 80px!important;
+    }
+
+    .pop_tit {
+        @include font-sub(800,30px);
+        margin-bottom: 25px;
+    }
+
+    .pop_body {
+        .tit1 {
+            @include font(400,22px);
+            letter-spacing: -0.4px;
+            line-height: 30px;
+            
+            em {
+                @include font-in;
+                font-weight: 700;
+            }
+        }
+        .desc1 {
+            @include font(400,18px,$c-gray3);
+            letter-spacing: -0.4px;
+            line-height: 30px;
+        }
+        .desc2 {
+            @include font(400,18px,$c-gray1);
+            letter-spacing: -0.4px;
+            line-height: 30px;
+        }
+        .c_blue1 {
+            color: $c-blue1;
+        }
+
+        .tab_ui.type1 {
+            margin-top: 75px;
+            .tab_inner {
+                justify-content: flex-start;
+
+            }
+            .tab {
+                margin-right: 8px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &:not(.active) {
+                    a {
+                        background: #eeeeee;
+                    }
+                }
+            }
+        }
+
+        .benefit_contents {
+            max-height: 460px;
+            overflow-y: auto;
+            margin: 20px -50px 0 0;
+            padding-right: 33px;
+
+            .category {
+                border-top: 2px solid #333;
+                padding: 35px 0 60px;
+
+                .info_box {
+                    position: relative;
+                    padding-left: 148px;
+                    min-height: 195px;
+
+                    &:not(:first-of-type) {
+                        margin-top: 30px;
+                    }
+
+                    .cmt_guide2.mark1, .desc2, .bullet_type2.mark1 {
+                        margin-left: 12px;
+                    }
+                    .tit1 {
+                        position: relative;
+                        padding-left: 12px;
+
+                        &::after {
+                            content: '';
+                            width: 4px;
+                            height: 4px;
+                            border-radius: 50%;
+                            position: absolute;
+                            left: 0;
+                            top: 13px;
+                            background-color: $c-basic;
+                        }
+                    }
+
+                    .wrap_logo {
+                        position: absolute;
+                        left: 0;
+                        top: 30px;
+                    }
+                    .logo {
+                        width: 128px;
+                        height: 128px;
+                        border-radius: 50%;
+                        border: 1px solid #e2e2e2;
+                        padding: 0 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+
+                        img {
+                            max-width: 100%;
+                        }
+
+                    }
+
+                    .logo_name {
+                        display: block;
+                        margin-top: 10px;
+                        text-align: center;
+                        @include font(400,18px,$c-gray3);
+                        letter-spacing: -0.4px;
+                    }
+                    .explain {
+                        .ex_inner {
+                            padding-top: 25px;
+                            
+                            .tit1 {
+                                margin-bottom: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include mobile {
+        .pop_layer {
+            max-width: 808px!important;
+            padding: 40px 20px!important;
+        }
+        .pop_tit {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+    
+        .pop_body {
+            .tit1 {
+                font-size: 15px;
+                line-height: 23px;
+            }
+            .desc1 {
+                font-size: 12px;
+                line-height: 20px;
+            }
+            .desc2 {
+                font-size: 12px;
+                line-height: 20px;
+                word-break: break-all;
+            }
+
+            .tab_ui.type1 {
+                margin-top: 38px;
+                height: auto;
+                padding: 0;
+
+                .tab_inner {
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                }
+                .tab {
+                    margin-top: 8px;
+
+                    a {
+                        height: 32px;
+                    }
+                }
+            }
+    
+            .benefit_contents {
+                max-height: calc(100vh - 400px);
+                margin: 35px -20px 0 0;
+                padding-right: 20px;
+    
+                .category {
+                    padding: 30px 0;
+                    border-top: 1px solid #999;
+
+                    &:first-of-type {
+                        border-top: 2px solid #333;
+                    }
+    
+                    .info_box {
+                        padding-left: 0;
+                        margin-top: 12px;
+
+                        .cmt_guide2.mark1, .desc2, .bullet_type2.mark1 {
+                            margin-left: 6px;
+                        }
+
+                        .tit1 {
+                            padding-left: 6px;
+    
+                            &::after {
+                                width: 3px;
+                                height: 3px;
+                                top: 10px;
+                            }
+                        }
+
+                        &:not(:first-of-type) {
+                            margin-top: 20px;
+                        }
+
+                        .wrap_logo {
+                            position: relative;
+                            left: 0;
+                            top: 0;
+                        }
+
+                        .logo {
+                            width: 64px;
+                            height: 64px;
+                        }
+
+                        .logo_name {
+                            position: absolute;
+                            margin-top: 0;
+                            text-align: left;
+                            font-size: 12px;
+                            top: 50%;
+                            left: 74px;
+                            transform: translateY(-50%);
+                        }
+
+                        .explain {
+                            .ex_inner {
+                                padding-top: 14px;
+
+                                &:first-of-type {
+                                    padding-top: 10px;
+                                }
+                                
+                                .tit1 {
+                                    margin-bottom: 5px;
+                                }
+                                .bullet_type2.mark1, .cmt_guide2.mark1 {
+                                    padding-top: 2px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*------------------- 클럽웨딩 문의처 ---------------------*/
+.pop_more_question {
+    &.type_modal {
+        .pop_layer {
+            padding: 55px 50px 35px;
+        }
+    }
+
+    .pop_tit {
+        @include font-sub(800,30px);
+        margin-bottom: 35px;
+    }
+
+    .pop_body {
+        .pop_wedding_list {
+            border-top: 2px solid #4d4d4d;
+            
+            >li {
+                position: relative;
+                border-bottom: 1px solid #eee;
+                padding: 20px 0 20px 180px;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+                
+                .tit {
+                    position: absolute;
+                    @include font(400,18px,$c-gray1);
+                    left: 40px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                
+                .bullet_type1.mark1 {
+                    li {
+                        @include font(400,18px,$c-gray1);
+                        margin-top: 5px;
+
+                        &:first-child {
+                            margin-top: 0;
+                        }
+                        &::before {
+                            top: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include mobile {
+        .pop_tit {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+    
+        .pop_body {
+            .pop_wedding_list {
+                border-top: 1px solid #4d4d4d;
+                
+                >li {
+                    padding: 13px 0 13px 90px;
+                    
+                    .tit {
+                        font-size: 13px;
+                        left: 10px;
+                    }
+                    
+                    .bullet_type1.mark1 {
+                        li {
+                            font-size: 13px;
+
+                            &::before {
+                                top: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*------------------- 사용처안내 ---------------------*/
+.pop_where_use {
+    .pop_layer {
+        padding: 0 !important;
+    }
+    .logo_area {
+        background: #f9f9f9;
+        border-radius: 16px 16px 0 0;
+        padding: 72px 80px;
+
+        .division {
+            position: relative;
+            padding-left: 190px;
+            display: flex;
+            align-items: center;
+            min-height: 144px;
+
+            .img_box {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 127px;
+                height: 127px;
+                margin: -63.5px auto 0;
+                padding: 0 6px;
+                border: 1px solid #e2e2e2;
+                background-color: #fff;
+                border-radius: 50%;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            .brand_txt {
+                .tit1 {
+                    @include font-sub(800,30px,$c-gray1);
+                    line-height: 36px;
+                }
+                .desc1 {
+                    margin-top: 6px;
+                    @include font(400,18px,$c-blue3);
+                    line-height: 30px;
+                    letter-spacing: -0.4px;
+                }
+                .desc2 {
+                    margin-top: 12px;
+                    @include font(400,18px);
+                    line-height: 30px;
+                    letter-spacing: -0.4px;
+                }
+            }
+        }
+
+        .btn_wrap {
+            margin-top: 45px;
+
+            .mo_only {
+                display: none;
+            }
+        }
+
+        @include mobile {
+            border-radius: 12px 12px 0 0;
+            padding: 48px 30px 40px; 
+
+            .division {
+                padding-left: 115px;
+                min-height: 95px;
+
+                .img_box {
+                    width: 95px;
+                    height: 95px;
+                    margin: -47.5px auto 0;
+                    padding: 0 20px;
+                }
+
+                .brand_txt {
+                    width: 100%;
+                    .tit1 {
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
+                    .desc1 {
+                        margin-top: 8px;
+                        font-size: 11px;
+                        line-height: inherit;
+                    }
+                    .desc2 {
+                        font-size: 10px;
+                        line-height: inherit;
+                    }
+                }
+            }
+
+            .btn_wrap {
+                width: 100%;
+                margin-top: 24px;
+                
+                .btn_typeC2 {
+                    height: 30px;
+                    line-height: 30px;
+                    width: 72px;
+                    font-size: 12px;
+                    padding: 0;
+                    
+                    .mo_only {
+                        display: none!important;
+                    }
+                }
+            }
+        }
+    }
+    .content_area {
+        padding: 0 55px 65px 60px;
+        
+        .detail_info {
+            height: 400px;
+            margin-right: -55px;
+            
+            .scroll_area {
+                height: 100%;
+                overflow-y: auto;
+                padding: 55px 30px 0 0;
+                
+                .info_txt {
+                    margin-top: 52px;
+
+                    &:first-child {
+                        margin-top: 0;
+                    }
+
+                    .tit1 {
+                        @include font(700,22px);
+                        letter-spacing: -0.4px;
+                        line-height: 30px;
+                        margin-bottom: 12px;
+
+                        .link {
+                            position: relative;
+                            display: inline-block;
+                            line-height: 18px;
+                            @include font-sub(600,18px,$c-blue1);
+
+                            span {
+                                @include font-in;
+                            }
+
+                            &::after {
+                                content: '';
+                                width: 100%;
+                                height: 1px;
+                                background-color: $c-blue1;
+                                position: absolute;
+                                left: 0;
+                                bottom: 0;
+                            }
+                        }
+                    }
+
+                    .tit2 {
+                        @include font(400,20px);
+                        letter-spacing: -0.4px;
+                        margin-bottom: 12px;
+                    }
+
+                    .desc3 {
+                        position: relative;
+                        @include font(400,18px,#808080);
+                        letter-spacing: -0.4px;
+                        margin-top: 10px;
+                        padding-left: 21px;
+                        
+                        &::before {
+                            content: '※';
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                        }
+
+                        &.c_red {
+                            color: $c-red1;
+                        }
+                    }
+
+                    .desc4 {
+                        @include font(400,18px,#808080);
+                        letter-spacing: -0.4px;
+                        margin-top: 20px;
+                    }
+
+                    
+                    .desc5 {
+                        margin-top: 12px;
+                        @include font(400,20px);
+                        letter-spacing: -0.4px;
+                    }
+
+                    .bullet_type2.mark1 {
+                        li {
+                            margin-top: 10px;
+                            padding-left: 0;
+
+                            .pd {
+                                padding-left: 75px;
+                            }
+
+                            &::before {
+                                position: static;
+                                margin-right: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @include mobile {
+            padding: 0 20px 40px 20px;
+
+            .detail_info {
+                height: auto;
+                max-height: 310px;
+                margin-right: -20px;
+                
+                .scroll_area {
+                    padding: 27px 20px 0 0;
+
+                    .info_txt {
+                        margin-top: 20px;
+
+                        &:first-child {
+                            margin-top: 0;
+                        }
+
+                        .tit1 {
+                            font-size: 14px;
+                            line-height: inherit;
+                            margin-bottom: 7px;
+
+                            .link {
+                                font-size: 12px;
+                                line-height: 12px;
+                                padding-top: 13px;
+                            }
+                        }
+                        .tit2 {
+                            font-size: 13px;
+                            margin-bottom: 0;
+                        }
+
+                        .desc3 {
+                            font-size: 12px;
+                            margin-top: 7px;
+                            padding-left: 13px;
+                        }
+
+                        .desc4 {
+                            font-size: 12px;
+                            margin-top: 10px;
+                        }
+
+                        .desc5 {
+                            margin-top: 0;
+                            font-size: 13px;
+                        }
+
+                        .bullet_type2.mark1 {
+                            li {
+                                margin-top: 7px;
+
+                                .pd {
+                                    padding-left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*------------------- 바코드 상세 (모바일 전용) ---------------------*/
+.pop_barcode {
+    text-align: center;
+
+    .con_top {
+        margin: 125px 0 75px;
+
+        .txt {
+            @include font-sub(600, 16px);
+            em {
+                @include font-in;
+                color: $c-blue1;
+            }
+        }
+        .pt {
+            display: inline-block;
+            @include font-sub(400, 16px, $c-gray1);
+            border-bottom: 1px solid $c-gray1;
+            margin-top: 30px;
+            em {
+                display: inline-block;
+                @include font-sub(800, 28px, $c-blue1);
+                line-height: 16px;
+                margin-right: 3px;
+            }
+        }
+    }
+    .con_bottom {
+        display: inline-block;
+        width: auto;
+
+        .tit {
+            display: flex;
+            align-items: flex-end;
+            padding: 0 20px;
+
+            .txt1 {
+                @include font-sub(800, 20px);
+                line-height: 1em;
+            }
+            .txt2 {
+                @include font-sub(400, 12px);
+                margin-left: auto;
+            }
+        }
+        .barcode {
+            display: flex;
+            justify-content: center;
+            margin-top: 35px;
+            > div {
+                display: flex;
+            }
+        }
+        .barcode_num {
+            @include font-sub(800, 14px);
+            text-align: center;
+            margin-top: 10px;
+
+            > span {
+                display: inline-block;
+                @include font-in;
+                margin: 5px;
+            }
+        }
+    }
+}
+
+/*------------------- 내정보수정 : 이름 수정 ---------------------*/
+.pop_modify_name {
+    .pop_layer {
+        max-width: 660px !important;
+    }
+    @include mobile {
+        .btn_ac {
+            position: relative;
+            padding-bottom: 60px;
+
+            a,
+            button {
+                &:first-child {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                }
+                &:nth-child(2) {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+/*------------------- 내정보수정 : 비밀번호 / 휴대폰번호 / 이메일 수정 ---------------------*/
+.pop_modify_pw,
+.pop_modify_tel,
+.pop_modify_email {
+    .btn_ac {
+        margin-top: 50px;
+    }
+    @include mobile {
+        .btn_ac {
+            margin-top: 30px;
+        }
+    }
+}
+
+
+/*------------------- 내정보수정 : 휴대폰번호 ---------------------*/
+.pop_modify_tel {
+    .tit_area {
+        position: relative;
+        margin-bottom: 20px;
+
+        .txt_right {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            @include font(400, 18px, $c-gray3);
+        }
+    }
+    .tel_bundle {
+        position: relative;
+        .inp_bundle {
+            &:first-child {
+                max-width: 135px;
+                margin-right: 24px;
+            }
+        }
+        .btn_cert {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+    }
+    
+    @include mobile {
+        .tit_area {
+            position: relative;
+            margin-bottom: 25px;
+    
+            .txt_right {
+                display: block;
+                position: static;
+                @include font(700, 14px);
+                margin-top: 10px;
+            }
+        }
+        .tel_bundle {
+            padding-bottom: 65px;
+    
+            .inp_bundle {
+                &:first-child {
+                    max-width: 80px;
+                    margin-right: 17px;
+                }
+            }
+            .btn_cert {
+                position: absolute;
+                right: 0;
+                top: auto;
+                bottom: 0;
+                width: 100%;
+                height: 50px;
+                line-height: 48px;
+                border: 1px solid $c-blue1;
+                color: $c-blue1;
+                font-size: 14px;
+                background: transparent;
+            }
+        }
+    }
+
+}
+
+
+/*------------------- 내정보수정 : 이메일 ---------------------*/
+.pop_modify_email {
+    .tit_area {
+        position: relative;
+        margin-bottom: 20px;
+
+        .txt_right {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            @include font(400, 18px, $c-gray3);
+        }
+    }
+    @include mobile {
+        .tit_area {
+            position: relative;
+            margin-bottom: 25px;
+    
+            .txt_right {
+                display: block;
+                position: static;
+                @include font(700, 14px);
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+
+
+/*------------------- 비밀번호 변경 팝업 ---------------------*/
+.pop_periodic_pw_change {
+    .pop_tit2 {
+        margin-bottom: 20px;
+    }
+    .con_txt {
+        @include font(400, 18px, #808080);
+        line-height: 30px;
+        letter-spacing: -0.8px;
+        // text-align: center;
+        margin-bottom: 40px;
+    }
+    .wrap_inp + .wrap_inp {
+        margin-top: 40px;
+    }
+    .btn_area {
+        margin-top: 60px;
+    }
+
+    @include mobile {
+        .con_txt {
+            font-size: 14px;
+            line-height: 23px;
+            margin-bottom: 30px;
+        }
+        .wrap_inp + .wrap_inp {
+            margin-top: 25px;
+        }
+        .btn_area {
+            margin-top: 30px;
+        }
+    }
+}
+
+
+
+
+/*------------------- H.Point APP 이동하기 ---------------------*/
+.pop_app_download {
+    .pop_layer {
+        padding: 55px!important;
+    }
+
+    .pop_tit {
+        @include font-sub(800,30px);
+        margin-bottom: 20px;
+    }
+
+    .tit1 {
+        @include font(700,22px);
+        letter-spacing: -0.4px;
+    }
+    
+    .desc1 {
+        @include font(400,18px,$c-gray3);
+    }
+
+    .qr_list {
+        margin-top: 45px;
+
+        li {
+            float: left;
+            width: calc(50% - 17.5px);
+            height: 235px;
+            border: 1px solid #ccc;
+            border-radius: 16px;
+            text-align: center;
+            padding-top: 40px;
+
+            &:first-child {
+                margin-right: 35px;
+            }
+
+            > img {
+                margin: 0 auto 25px;
+            }
+
+        }
+    }
+    
+    .send_url {
+        margin-top: 53px;
+
+        .inp_bundle {
+            margin: 25px 0;
+
+            .btn_right {
+                width: 148px;
+            }
+        }
+    }
+
+    @include mobile {
+        .pop_layer {
+            padding: 36px 20px 43px!important;
+        }
+    
+        .pop_tit {
+            font-size: 20px;
+            margin-bottom: 7px;
+        }
+    
+        .tit1 {
+            font-size: 11px;
+        }
+        
+        .desc1 {
+            font-size: 14px;
+        }
+    
+        .qr_list {
+            margin-top: 25px;
+    
+            li {
+                width: calc(50% - 7px);
+                height: 128px;
+                border-radius: 8px;
+                padding-top: 20px;
+    
+                &:first-child {
+                    margin-right: 14px;
+                }
+    
+                > img {
+                    width: 53px;
+                    margin: 0 auto 7px;
+                }
+    
+            }
+        }
+        
+        .send_url {
+            margin-top: 35px;
+            
+            .tit1 {
+                font-size: 15px;
+            }
+            .inp_bundle {
+                margin: 10px 0;
+    
+                .btn_right {
+                    width: 90px;
+                }
+            }
+        }
+    }
+}
+
+
+
+/*------------------- 모달 팝업 배너 ---------------------*/
+.pop_mobal_banner {
+    .pop_layer {
+        max-width: 540px !important;
+        padding: 0 !important;
+        background-color: transparent;
+    }
+    .swiper-slide {
+        img {
+            width: 100%;
+            border-radius: 25px;
+        }
+    }
+    .swiper-pagination {
+        margin-top: 20px;
+    }
+    .btn_not_today {
+        position: absolute;
+        right: 46px;
+        top: -33px;
+
+        label {
+            position: relative;
+            @include font(400, 14px, #fff);
+            padding-left: 25px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 2px;
+                width: 16px;
+                height: 16px;
+                border: 2px solid #fff;
+            }
+        }
+    }
+    .btn_pop_close {
+        right: 0;
+        top: -30px;
+        background-image: url('/assets/app/img/common/ic_x2.png');
+    }
+
+    @include mobile {
+        .swiper-slide {
+            img {
+                border-radius: 12px;
+            }
+        }
+        .swiper-pagination {
+            margin-top: 15px;
+        }
+        .btn_not_today {
+            position: absolute;
+            right: auto;
+            left: 0;
+            top: -33px;
+    
+            label {
+                font-size: 13px;
+                padding-left: 20px;
+    
+                &::before {
+                    top: 3px;
+                    width: 13px;
+                    height: 13px;
+                }
+            }
+        }
+        .btn_pop_close {
+            right: 0;
+            top: -30px;
+            background-image: url('/assets/app/img/common/mo/ic_x2.png');
+        }
+    }
+}
+
+
+
+/*------------------- 상단 배너 ---------------------*/
+.page_top_banner {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    // height: 150px;
+    // background-color: #562bd0;
+
+    .wrap_banner_pc {
+        a {
+            position: relative;
+            display: block;
+        }
+        .ratio {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        .img {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: block;
+            width: 100%;
+            max-width: 1920px;
+            height: 100%;
+            margin: 0 auto;
+            @include bgCover;
+        }
+    }
+    .wrap_banner_mo {
+        display: none;
+        padding-bottom: 40px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .wrap_close {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+
+        .inner {
+            position: relative;
+            max-width: 1284px;
+            min-width: 280px;
+            padding: 0 30px;
+            margin: 0 auto;
+        }
+        .btn_not_today {
+            position: absolute;
+            right: 60px;
+            top: 15px;
+
+            label {
+                @include font(400, 14px, #fff);
+                padding-left: 25px;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 5px;
+                    width: 16px;
+                    height: 16px;
+                    background-color: #fff;
+                }
+            }
+        }
+        .btn_close {
+            position: absolute;
+            right: 30px;
+            top: 18px;
+            text-indent: -9999px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 4px;
+                width: 13px;
+                height: 13px;
+                @include bgUrl('common/ic_x3.png', center);
+            }
+        }
+    }
+
+    @include mobile {
+        .wrap_banner_pc {
+            display: none;
+        }
+        .wrap_banner_mo {
+            display: block;
+        }
+        .wrap_close {
+            left: 0;
+            right: 0;
+            top: auto;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+
+            .inner {
+                padding: 5px 20px 0;
+            }
+            .btn_not_today {
+                position: static;
+    
+                label {
+                    font-size: 12px;
+                    padding-left: 0;
+    
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+            .btn_close {
+                position: absolute;
+                right: 20px;
+                top: 10px;
+                @include font(400, 12px, #fff);
+                text-indent: 0;
+                padding-right: 0;
+                > span {
+                    @include font-in;
+                }    
+                &::before {
+                    display: none;
+                }
+            }
+        }
+        &.guest {
+            .wrap_close {background-color: #4520af;}
+        }
+        &.member {
+            .wrap_close {
+                background-color: #333;
+            }
+        }
+    }
+}
+
+
+
+
+/*------------------- 하단 플로팅 배너 ---------------------*/
+.btm_float_banner {
+    // display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%; 
+    max-width: 1920px;
+    margin: 0 auto;
+
+    .wrap_banner_pc {
+        position: relative;
+        
+        > img {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        .inner {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            background: #fff;
+
+            a {
+                display: block;
+                flex: 1 1 0;
+    
+                .img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    @include bgCover;
+                    transition: .3s;
+                }
+            }
+        }
+    }
+    .wrap_banner_mo {
+        display: none;
+    }
+
+    .wrap_close {
+        position: absolute;
+        left: 0;
+        bottom: 100%;
+        width: 100%;
+        height: 40px;
+        background-color: #fff;
+        padding-top: 7px;
+
+        .inner {
+            position: relative;
+            max-width: 1344px;
+            min-width: 280px;
+            padding: 0 30px;
+            margin: 0 auto;
+        }
+        .btn_not_today {
+            position: relative;
+
+            label {
+                @include font(500, 14px);
+                padding-left: 25px;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 5px;
+                    width: 16px;
+                    height: 16px;
+                    // border: 2px solid #fff;
+                    background-color: #ccc;
+                }
+            }
+        }
+        .btn_close {
+            position: absolute;
+            right: 30px;
+            top: 3px;
+            @include font(500, 14px);
+            padding-right: 20px;
+            > span {
+                @include font-in;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 4px;
+                width: 13px;
+                height: 13px;
+                @include bgUrl('common/ic_x1.png', center, cover);
+            }
+        }
+    }
+
+
+    @include mobile {
+        .wrap_banner_pc {
+            display: none;
+        }
+        .wrap_banner_mo {
+            display: block;
+
+            img {
+                width: 100%;
+                border-radius: 20px 20px 0 0;
+            }
+
+            .swiper-pagination {
+                position: absolute;
+                left: auto;
+                right: 16px;
+                top: 15px;
+                bottom: auto;
+                width: auto;
+            }
+        }
+    
+        .wrap_close {
+            position: static;
+            height: 50px;
+            padding-top: 12px;
+    
+            .inner {
+                padding: 0 20px;
+            }
+            .btn_not_today {
+                label {
+                    font-size: 13px;
+                    color: #808080;
+                    padding-left: 0;
+    
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+            .btn_close {
+                position: absolute;
+                right: 20px;
+                top: 3px;
+                font-size: 13px;
+                padding-right: 0;
+                > span {
+                    @include font-in;
+                }
+    
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/*------------------- 모바일앱 안내 팝업 ---------------------*/
+.pop_watch_app {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    overflow-y: auto;
+    padding: 80px 0;
+    
+    .wrap {
+        img {
+            width: 100%;
+        }
+        .inner {
+            text-align: center;
+            padding: 0 20px;
+    
+            .btn_typeA2 {
+                height: 60px;
+                font-size: 17px;
+                line-height: 60px;
+            }
+            .btn_close {
+                display: inline-block;
+                @include font(400, 12px, #fff);
+                margin-top: 25px;
+            }
+        }
+    }
+}
+
+
+
+
+/*------------------- ie9이하 브라우저 업데이트 안내 팝업 ---------------------*/
+.pop_browser_update {
+    .pop_layer {
+        max-width: 800px !important;
+        padding: 60px 50px 80px !important;
+    }
+    .pop_tit2 {
+        margin-bottom: 15px;
+    }
+    .txt1 {
+        @include font(400, 18px, #808080);
+        line-height: 40px;
+        
+        .under {
+            text-decoration: underline;
+        }
+    }
+    .tit1 {
+        @include font(700, 22px);
+        margin: 40px 0 15px;
+    }
+    .ex_img {
+        max-width: 100%;
+        margin: 40px 0 20px;
+    }
+    .cmt_guide1 {
+        line-height: 32px;
+
+        &::before {
+            top: 15px;
+        }
+    }
+    .wrap_btn {
+        margin-top: 25px;
+
+        .btn_down {
+            float: left;
+            width: 47%;
+            height: 72px;
+            @include font-sub(600, 20px, $c-blue1);
+            line-height: 70px;
+            text-align: center;
+            border: 1px solid $c-blue1;
+            border-radius: 8px;
+            margin-left: 30px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+            > span {
+                position: relative;
+                display: inline-block;
+                @include font-in;
+                padding: 0 35px;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 18px;
+                    height: 18px;
+                    @include bgUrl('common/ic_download3.png');
+                }
+            }   
+            &.ie > span {
+                @include bgUrl('common/ic_ie.png', left center);
+            } 
+            &.chrome > span {
+                @include bgUrl('common/ic_chrome.png', left center);
+            } 
+        }
+    }
+}

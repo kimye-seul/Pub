@@ -1,0 +1,160 @@
+/*------------------- footer ---------------------*/
+#footer {
+	position: relative;
+	width: 100%;
+	min-width: 280px;
+	height: auto;
+	background: #fff;
+	border-top: 1px solid #e6e6e6;
+	padding: 45px 0 60px;
+
+	.inner {
+		position: relative;
+		padding-left: 210px;
+	}
+	.logo {
+		position: absolute;
+		left: 0;
+		top: 5px;
+		width: 149px;
+		height: 50px;
+		@include bgUrl('common/logo2.png', 0 0, contain);
+	}
+	.ft_menu {
+		li {
+			float: left;
+			margin-right: 35px;
+
+			a {
+				@include font(400, 16px, $c-gray1);
+				letter-spacing: -0.25px;
+			}
+		}
+	}
+	.ft_sns {
+		position: absolute;
+		right: 0;
+		top: 0;
+
+		li {
+			float: left;
+			margin-left: 10px;
+		}
+	}
+	.ft_info {
+		margin-top: 25px;
+
+		p {
+			position: relative;
+			float: left;
+			@include font(400, 14px, $c-gray3);
+			letter-spacing: -0.25px;
+			margin-right: 10px;
+			padding-right: 12px;
+
+			&:last-child {
+				&::after {
+					display: none;
+				}
+			}
+			&::after {
+				content: "";
+				position: absolute;
+				right: 0;
+				top: 50%;
+				width: 2px;
+				height: 2px;
+				background: $c-gray3;
+				opacity: 0.5;
+			}
+		}
+	}
+	.copyright {
+		@include font(400, 12px, $c-gray3);
+		letter-spacing: 0.3px;
+		margin-top: 12px;
+	}
+}
+
+@include tablet {
+	#footer {
+		.inner {
+			padding-left: 0;
+		}
+		.logo {
+			position: static;
+			margin-bottom: 25px;
+		}
+	}
+}
+
+@include mobile {
+	#footer {
+		padding: 37px 0 42px;
+		.logo {
+			height: 30px;
+		}
+		.ft_menu li {
+			margin-right: 15px;
+			a {
+				font-size: 12px;
+			}
+		}
+		.ft_info {
+			margin-top: 15px;
+
+			p {
+				font-size: 11px;
+				margin-right: 5px;
+				padding-right: 7px;
+			}
+		}
+		.copyright {
+			font-size: 11px;
+			margin-top: 10px;
+		}
+	}
+}
+
+
+
+.pageTop {
+	display: none;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	
+	.wrap {
+		position: relative;
+		margin: 0 auto;
+		
+		.btn_top {
+			position: absolute;
+			right: 30px;
+			bottom: 30px;
+			width: 50px;
+			height: 50px;
+			text-indent: -9999px;
+			@include bgUrl('common/ic_top.png', center center);
+			background-color: #fff;			
+			border-radius: 50%;
+			box-shadow: 5.142px 6.128px 12.35px 0.65px rgba(25, 48, 88, 0.3);
+		}
+	}
+
+
+	@include tablet {
+		.wrap {
+			.btn_top {
+				position: absolute;
+				right: 15px;
+				bottom: 15px;
+				@include bgUrl('common/mo/ic_top.png', center center, 13px);
+				box-shadow: 3px 3px 10px 1px rgba(25, 48, 88, 0.4);
+			}
+		}
+	}
+
+}
+
