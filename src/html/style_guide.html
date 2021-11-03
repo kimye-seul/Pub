@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<title>H.Point Style Guide</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta name="viewport" content="width=device-width, initial=1.0, minimum=1.0, maximum=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<link rel="stylesheet" href="/assets/app/css/swiper.min.css">
+	<!-- <link rel="stylesheet" href="/assets/app/css/jquery.mCustomScrollbar.min.css"> -->
+	<link href="/assets/app/css/screen.ui.css" rel="stylesheet" type="text/css" media="screen,print">
+
+	<script type="text/javascript" src="/assets/app/js/jquery-3.3.1.min.js"></script>
+	<!-- <script type="text/javascript" src="/assets/app/js/jquery.mCustomScrollbar.concat.min.js"></script> -->
+	<script type="text/javascript" src="/assets/app/js/swiper.min.js"></script>
+	<script type="text/javascript" src="/assets/app/js/common-pub.js"></script>
+	<script type="text/javascript" src="/assets/app/js/page-pub.js"></script>
+    
+	<script type="text/javascript">
+		$(function () {
+			
+			commonPub.common();
+			
+		})
+	</script>
+
+	<style type="text/css">
+		h1 {font-family:'Noto Sans KR';font-weight:400;font-size:30px;color:#000;}
+		h2 {font-family:'Noto Sans KR';font-weight:400;font-size:20px;color:#000;text-align:center;margin:80px 0 30px 0;border-top:2px solid #333;background:#f7f7f7;padding:10px;}
+		h3 {font-family:'Noto Sans KR';font-weight:400;font-size:16px;color:orangered;margin-bottom: 5px;}
+		.bg {background: #000; padding: 15px;}
+		.desc_guide {margin-bottom: 15px;}
+		.desc_guide li {margin-bottom: 5px;font-size: 15px; color: #333;padding-left: 15px;position: relative;}
+		.desc_guide li:before {content: "";display: inline-block;width: 6px;height: 6px;background: #333;border-radius: 50%;-webkit-border-radius: 50%;position: absolute; left: 0; top: 8px;}
+		.desc_guide li .code {color: firebrick;font-size: 14px;}
+	</style>
+
+</head>
+<body>
+
+	<div style="max-width:1360px;margin:0 auto;padding:40px;box-sizing:border-box;">
+
+		<h1>H.Point Style Guide</h1>
+
+
+		<!-------------------- comment style ---------------------->
+		<h2>comment style</h2>
+
+		<h3>[코멘트 스타일 공통]</h3>
+		<p class="desc_guide">- 텍스트 스타일이 같은 타입을 bullet_typeN 클래스로 묶고, 왼쪽 패딩과 기호에 따라 클래스를 추가하여 쓴다.</p>
+
+		<h3>[한줄 코멘트]</h3>
+		<p class="cmt_guide1 mark1">화보, 영수증 등의 서비스가 우편으로 발송됩니다. 우편물을 받지 않기를 원하시면,<br /> 대표번호(02-544-9544)로 전화주세요.</p>
+		<p class="cmt_guide1 mark2">화보, 영수증 등의 서비스가 <em>우편으로 발송</em>됩니다. 우편물을 받지 않기를 원하시면, 대표번호(02-544-9544)로 전화주세요.</p>
+		<br>
+		<p class="cmt_guide2 mark1">플러스포인트 쿠폰 증정(매월 금액별 각 1매)</p>
+		<br>
+		<p class="cmt_guide3 mark1">H.Point APP, 백화점카드데스크에서 신청가능합니다.</p>
+
+		<br><br>
+		<h3>[리스트 코멘트]</h3>
+		<ul class="bullet_type1 mark1">
+			<li>H.Point 회원가입은 만 14세 이상만 가입 가능합니다.</li>
+			<li>네이버 간편 가입은 네이버 인증서 발급 회원만 가능합니다.</li>
+		</ul>
+		<br>
+		<ul class="bullet_type1 mark2">
+			<li>필수항목에 동의하지 않으실 경우 서비스 가입이 불가합니다.</li>
+			<li><em>선택항목에 동의하지 않으셔도 서비스 가입이 가능하나, 관련 서비스는 제공받으실 수 없습니다.</em></li>
+		</ul>
+		<br>
+		<ul class="bullet_type1 mark3">
+			<li>온라인 결제 : APP 내 현금영수증 발행정보 등록 시, 포인트 사용분 현금영수증 자동 발행</li>
+			<li>오프라인 결제 : 매장 결제 시 현금영수증 발급을 요청</li>
+		</ul>
+		<br>
+		<ul class="bullet_type2 mark1">
+			<li>브랜드별 기본 적립액의 2배 즉시 적립</li>
+			<li>가입 완료(승인) 익일 결제 건부터 적용</li>
+		</ul>
+		<br>
+		<ul class="bullet_type3 mark1">
+			<li>
+				단, 본 서비스는 현대백화점, 현대프리미엄아울렛, 현대시티아울렛 등 <br>
+				현대백화점 오프라인 매장에서만 이용 가능합니다.
+			</li>
+			<li>H.Point APP, 백화점카드데스크에서 신청가능합니다.</li>
+		</ul>
+		<br>
+		<ul class="bullet_type4 mark1">
+			<li><span class="c_blue1">이벤트에 참여</span>하고 <span class="c_blue1">포인트 추가적립</span> 등 다양한 혜택을 받을 받아보세요</li>
+			<li><span class="c_blue1">H.Point Only,</span> 포인트 충전하고 <span class="c_blue1">포인트샵</span>에서 마음껏 쇼핑하세요</li>
+		</ul>
+		<br><br>
+
+		<!-------------------- Tab style ---------------------->
+		<h2>Tab style</h2>
+
+		<div class="tab_ui type1">
+			<div class="tab_wrap">
+				<ul class="tab_inner">
+					<li class="tab active"><a href="#"><span>tab</span></a></li>
+					<li class="tab"><a href="#"><span>tab</span></a></li>
+					<li class="tab"><a href="#"><span>tab</span></a></li>
+					<li class="tab"><a href="#"><span>tab</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<br>
+		
+		<div class="tab_ui type2 tabSwiper">
+			<div class="tab_wrap swiper-container">
+				<ul class="tab_inner swiper-wrapper">
+					<li class="swiper-slide tab active"><a href="#"><span>전체</span></a></li>
+					<li class="swiper-slide tab"><a href="#"><span>회원</span></a></li>
+					<li class="swiper-slide tab"><a href="#"><span>포인트</span></a></li>
+					<li class="swiper-slide tab"><a href="#"><span>혜택</span></a></li>
+					<li class="swiper-slide tab"><a href="#"><span>친구</span></a></li>
+					<li class="swiper-slide tab"><a href="#"><span>APP</span></a></li>
+					<li class="swiper-slide tab"><a href="#"><span>충전</span></a></li>
+					<li class="swiper-slide tab"><a href="#"><span>포인트 기부</span></a></li>
+					<li class="swiper-slide tab"><a href="#"><span>포인트 워크</span></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<script>
+			// 페이지 진입시 활성화시키려는 탭의 index값을 파라미터로 넘겨줌
+			page.tabMenu.tabSwiper(7);
+		</script>
+		<br>
+
+
+		<br><br>
+		<h3>[컨텐츠페이지 tab메뉴 이동]</h3>
+		<p class="desc_guide">- .viewTab / .viewPanel 클래스를 사용해서 구성</p>
+
+		<!-- tab -->
+		<div class="tab_ui type1 viewTab">
+			<div class="tab_wrap">
+				<ul class="tab_inner">
+					<li class="tab active"><a href="#"><span>tab</span></a></li>
+					<li class="tab"><a href="#"><span>tab</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<!--// -->
+		<div class="wrap"><!-- 임의의 wrap -->
+			<div class="viewPanel active">
+				<div style="height: 200px;display: flex;justify-content: center;align-items: center;font-size: 20px;background: #f7f7f7;">CONTENT1</div>
+			</div>
+			<div class="viewPanel">
+				<div style="height: 200px;display: flex;justify-content: center;align-items: center;font-size: 20px;background: #f7f7f7;">CONTENT2</div>
+			</div>
+		</div>
+
+		<script>
+			page.tabMenu.tabViewContents();
+		</script>
+
+		
+		
+		<!-------------------- button style ---------------------->
+		<h2>Button style</h2>
+
+		<h3>[버튼 공통]</h3>
+		<p class="desc_guide">- 버튼 너비는 최초생성하는 버튼의 크기로 한다. 같은 모양에 너비가 다른 버튼이 있다면 해당 페이지 css에서 따로 처리</p>
+		<br>
+		
+		<h3>[버튼타입 A]</h3>
+		<a href="#" class="btn_typeA1"><span>목록</span></a> &nbsp;
+		<a href="#" class="btn_typeA2"><span>유튜브 바로가기</span></a> &nbsp;
+
+
+		<br><br>
+		
+		<h3>[버튼타입 B]</h3>
+		<button type="button" class="btn_typeB1"><span>취소</span></button> &nbsp;
+		<button type="button" class="btn_typeB2"><span>다음</span></button> &nbsp;
+		
+		<br><br>
+		
+		<h3>[버튼타입 C]</h3>
+		<button type="button" class="btn_typeC1"><span>내용보기</span></button> &nbsp;
+		<button type="button" class="btn_typeC2"><span>중복확인</span></button> &nbsp;
+		
+		<br><br>
+		
+		<h3>[ETC]</h3>
+		<a href="#" class="btn_small1"><span>안내</span></a> &nbsp;
+
+		<br><br>
+
+		
+
+		
+		
+
+		<!-------------------- checkbox style ---------------------->
+		<h2>Checkbox style</h2>
+
+		<div>
+			<span class="checkbox_ui type1">
+				<input type="checkbox" id="chkTemp1" checked>
+				<label for="chkTemp1">아이디저장</label>
+			</span>
+
+			<br><br>
+
+			<span class="checkbox_ui type1">
+				<input type="checkbox" id="chkTemp2">
+				<label for="chkTemp2" class="no_word"></label>
+			</span>
+		</div>
+		<br>
+
+
+
+
+		<!-------------------- Radio button style ---------------------->
+		<h2>Radio button style</h2>
+
+		<div>
+			<span class="radio_ui type1">
+				<input type="radio" id="radio1-1" name="radioTemp1" checked>
+				<label for="radio1-1">평생회원(탈퇴시)</label>
+			</span>
+			&nbsp;&nbsp;&nbsp;
+			<span class="radio_ui type1">
+				<input type="radio" id="radio1-2" name="radioTemp1">
+				<label for="radio1-2">1년</label>
+			</span>
+			
+			<br><br>
+
+			<span class="radio_ui type1">
+				<input type="radio" id="radio1-3" name="radioTemp1">
+				<label for="radio1-3" class="no_word"></label>
+			</span>
+		</div>
+		<br>
+
+
+
+
+		<!-------------------- form style ---------------------->
+		<h2>Form style</h2>
+		<p class="desc_guide">- 기본 input은 .inp_self</p>
+		<p class="desc_guide">- 기본 select는 div로 감싸고 .select_ui</p>
+		<p class="desc_guide">- 번들형 input은 .inp_bundle로 감싸고 .inp</p>
+		<p class="desc_guide">- 번들형 select는 .inp_bundle로 감싸고 select태그에 .select</p>
+		
+		<br><br>
+		
+		<div style="max-width: 800px;">
+			<h3>[기본형]</h3>
+			<input type="search" class="inp_self" placeholder="검색어를입력해주세요." />
+			<br><br>
+
+			<div class="select_ui" style="width: 250px;">
+				<select>
+					<option value="">option 1</option>
+					<option value="">option 2</option>
+				</select>
+			</div>
+
+			<br><br>
+
+			<div class="select_ui2" style="width: 250px;">
+				<select class="select flex">
+					<option value="">직접입력</option>
+					<option value="">naver.com</option>
+					<option value="">hanmail.net</option>
+					<option value="">daum.net</option>
+					<option value="">gmail.com</option>
+					<option value="">nate.com</option>
+				</select>
+			</div>
+			
+			
+			<br><br>			
+			<h3>[번들형]</h3>
+
+			<div class="inp_bundle">
+				<input type="text" id="id" class="inp flex" placeholder="아이디" />
+			</div>
+			
+			<br><br>
+
+		
+
+			<br>
+			<h3>[label과 함께]</h3>
+
+			<!-- 아이디 -->
+			<div class="wrap_inp">
+				<label for="id" class="inp_tit">아이디<span class="nec">*</span></label>
+				<!-- input에 값을 잘 못 입력하면 .inp_bundle에 클래스 "error" 추가해주세요. (포커스되고 값이 입력되면 "focus" 클래스가 붙음) -->
+				<div class="inp_bundle">
+					<input type="text" id="id" class="inp flex" placeholder="아이디" />
+					<button type="button" class="btn_right btn_typeC2"><span>중복확인</span></button>
+				</div>
+				<!-- 
+					승인 메시지 : t_success
+					에러 메시지 : t_error
+				 -->
+				<p class="t_success">사용가능한 아이디입니다.</p>
+				<ul class="bullet_type1 mark1 inp_mt">
+					<li>4~20자의 영문, 숫자만 입력해주세요.</li>
+					<li>아이디는 대소문자 구분합니다.</li>
+				</ul>
+			</div>
+			<!--// 아이디 -->
+			<br>
+			<br>
+			
+			<div class="textarea_ui">
+				<textarea rows="9" placeholder="내용"></textarea>
+				<p class="textarea_byte"><em>0</em>/100Byte</p>
+			</div>
+			<br><br>
+			
+			<!-- search -->
+			<div class="search_bundle">
+				<div class="select_ui">
+					<select>
+						<option>전체</option>
+						<option>백화점</option>
+						<option>아울렛</option>
+						<option>더현대닷컴</option>
+						<option>현대Hmall</option>
+						<option>현대홈쇼핑</option>
+						<option>현대백화점 면세점</option>
+						<option>리바트</option>
+						<option>H위크몰</option>
+						<option>한섬</option>
+						<option>현대그린푸드</option>
+						<option>현대렌탈케어</option>
+						<option>현대드림투어</option>
+						<option>H.Point</option>
+					</select>
+				</div>
+				<div class="inp_search">
+					<input type="search" class="inp_self" placeholder="검색어를입력해주세요." />
+					<button type="button" class="btn_search"><span class="hidden">검색</span></button>
+				</div>
+			</div>
+			
+
+		</div>
+
+		<!-------------------- box style ---------------------->
+		<h2>Box style</h2>
+
+		<div class="box_type1">
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus iusto odio nisi, molestiae ut non exercitationem quia? Impedit optio, maiores est sit eaque odit, in, doloremque vitae ad aliquid et.
+		</div>
+		<br>
+		<div class="box_type2">
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus iusto odio nisi, molestiae ut non exercitationem quia? Impedit optio, maiores est sit eaque odit, in, doloremque vitae ad aliquid et.
+		</div>
+		<br><br>
+
+
+		<!-------------------- etc ---------------------->
+		<h2>ETC</h2>
+
+		<h3>[로딩]</h3>
+		<!-- <div class="loading_ui">
+			<div class="bg_spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+			<div class="obj_spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+		</div> -->
+
+		<!-------------------- tooltip style ---------------------->
+		<!-- <h2>Tooltip style</h2>
+
+
+		<br><br> -->
+
+
+
+		<!-------------------- table style ---------------------->
+		<h2>Table style</h2>
+
+		<div class="tableWrap">
+			<!-- <div class="tbl_top clear">
+				<div class="left">
+					<p class="tbl_tit">회원/비회원</p>
+					<span class="unit1">단위 : 원</span>
+				</div>
+				<div class="right">
+					
+				</div>
+			</div> -->
+			<div class="tbl_type1">
+				<table>
+					<caption>회원 계정정보</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th class="no_bar">ID</th>
+							<th>최종업데이트일</th>
+						</tr>
+					</thead>
+					<tbody class="tac">
+						<tr>
+							<td class="no_bar">Roob***</td>
+							<td>2021-02-09</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p class="cmt_guide1">위에 표시된 금액은 변동될 수 있습니다. 위에 표시된 금액은 변동될 수 있습니다.</p>
+		</div>
+
+		<br><br>
+		<div class="tbl_type2 th_border">
+			<table>
+				<caption>테이블 설명 문구</caption>
+				<colgroup>
+					<col>
+					<col>
+					<col>
+					<col>
+				</colgroup>
+				<thead>
+					<tr>
+						<th>사업연도</th>
+						<th>감사인</th>
+						<th>감사의견</th>
+						<th>비고</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="2">2017</td>
+						<td>삼일회계법인</td>
+						<td>적정</td>
+						<td class="tar">-</td>
+					</tr>
+					<tr>
+						<td>삼일회계법인</td>
+						<td>적정</td>
+						<td class="tar">-</td>
+					</tr>
+					<tr>
+						<td>2018</td>
+						<td>삼정회계법인</td>
+						<td>-</td>
+						<td class="tar">지정 감사인(증권선물위원회)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<br><br>
+		<div class="tbl_type2 th_border">
+			<table>
+				<caption>테이블 설명 문구</caption>
+				<colgroup>
+					<col>
+					<col>
+					<col>
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>2018</th>
+						<td>삼정회계법인</td>
+						<td>-</td>
+						<td class="tar">지정 감사인(증권선물위원회)</td>
+					</tr>
+					<tr>
+						<th>2018</th>
+						<td>삼정회계법인</td>
+						<td>-</td>
+						<td class="tar">지정 감사인(증권선물위원회)</td>
+					</tr>
+					<tr>
+						<th>2018</th>
+						<td>삼정회계법인</td>
+						<td>-</td>
+						<td class="tar">지정 감사인(증권선물위원회)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		
+
+		<!-------------------- Accordion List ---------------------->
+		<h2>Accordion List</h2>
+		<div class="acodiList acodi_type1">
+			<ul>
+				<li class="ac_item">
+					<div class="ac_head">
+						<span class="ic_Q">Q</span>
+						<div class="tit_area">
+							<p class="subject"><span class="kinds">친구</span>포인트워크 걷기 미션은 어떻게 하는 건가요?</p>
+						</div>
+					</div>
+					<div class="ac_panel">
+						<span class="ic_A">A</span>
+						<div class="con_area">
+							함께 산책할 귀여운 캐릭터를 선택해주세요! 함께 매일 걷기 하신 후 포인트워크 메인 화면에서 젤리적립을 클릭하면 젤리를 받으실 수 있습니다!<br>500보 당 5젤리가 적립됩니다. 매일 자정에 젤리와 걸음수가 초기화되니, 젤리가 소멸되기 전에 적립해주세요!
+						</div>
+					</div>
+				</li>
+				<li class="ac_item">
+					<div class="ac_head">
+						<span class="ic_Q">Q</span>
+						<div class="tit_area">
+							<p class="subject"><span class="kinds">회원</span>외국인도 H.Point 혜택을 받을 수 있나요?</p>
+						</div>
+					</div>
+					<div class="ac_panel">
+						<span class="ic_A">A</span>
+						<div class="con_area">
+							함께 산책할 귀여운 캐릭터를 선택해주세요! 함께 매일 걷기 하신 후 포인트워크 메인 화면에서 젤리적립을 클릭하면 젤리를 받으실 수 있습니다!<br>500보 당 5젤리가 적립됩니다. 매일 자정에 젤리와 걸음수가 초기화되니, 젤리가 소멸되기 전에 적립해주세요!
+						</div>
+					</div>
+				</li>
+				<li class="ac_item">
+					<div class="ac_head">
+						<span class="ic_Q">Q</span>
+						<div class="tit_area">
+							<p class="subject"><span class="kinds">포인트 기부</span>기부금 영수증 신청 시 주민등록번호가 꼭 필요한가요? 기부금 영수증 신청 시 주민등록번호가 꼭 필요한가요?</p>
+						</div>
+					</div>
+					<div class="ac_panel">
+						<span class="ic_A">A</span>
+						<div class="con_area">
+							함께 산책할 귀여운 캐릭터를 선택해주세요! 함께 매일 걷기 하신 후 포인트워크 메인 화면에서 젤리적립을 클릭하면 젤리를 받으실 수 있습니다!<br>500보 당 5젤리가 적립됩니다. 매일 자정에 젤리와 걸음수가 초기화되니, 젤리가 소멸되기 전에 적립해주세요!
+						</div>
+					</div>
+				</li>
+				<li class="ac_item">
+					<div class="ac_head">
+						<span class="ic_Q">Q</span>
+						<div class="tit_area">
+							<p class="subject"><span class="kinds">포인트 워크</span>포인트워크 걷기 미션은 어떻게 하는 건가요?</p>
+						</div>
+					</div>
+					<div class="ac_panel">
+						<span class="ic_A">A</span>
+						<div class="con_area">
+							함께 산책할 귀여운 캐릭터를 선택해주세요! 함께 매일 걷기 하신 후 포인트워크 메인 화면에서 젤리적립을 클릭하면 젤리를 받으실 수 있습니다!<br>500보 당 5젤리가 적립됩니다. 매일 자정에 젤리와 걸음수가 초기화되니, 젤리가 소멸되기 전에 적립해주세요!
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+	
+
+
+		<!-------------------- board style ---------------------->
+		<h2>Board style</h2>
+
+		<h3>[column list]</h3>
+		<!-- list top -->
+		<div class="list_top_ui">
+			<div class="list_total">진행중인 이벤트 <em>77건</em></div>
+			
+			<div class="search_area">
+				<div class="search_bundle">
+					<div class="inp_search">
+						<input type="search" class="inp_self" placeholder="검색어를입력해주세요." />
+						<button type="button" class="btn_search"><span class="hidden">검색</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--// list top -->
+
+
+		<div class="board_list_type1">
+			<ul class="col3 clear">
+				<li>
+					<a href="#">
+						<span class="new"><span>NEW</span></span>
+						<span class="d_day">D-14</span>
+						<figure class="thumbnail">
+							<img class="ratio" src="/assets/app/img/common/ratio_event.gif" alt="">
+							<span class="img" style="background-image:url('https://www.h-point.co.kr/cma/image/1000303357.nhd');"></span>
+						</figure>
+						<div class="wrap_txt">
+							<p class="subject elps2">[현대백화점카드 X 더현대트래블] 호텔 및 항공권 할인</p>
+							<div class="date">2021.07.01~2021.07.31</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="d_day">D-14</span>
+						<figure class="thumbnail">
+							<img class="ratio" src="/assets/app/img/common/ratio_event.gif" alt="">
+							<span class="img" style="background-image:url('https://www.h-point.co.kr/cma/image/1000322273.nhd');"></span>
+						</figure>
+						<div class="wrap_txt">
+							<p class="subject elps2">인기 뮤지컬 &lt;비틀쥬스&gt; H.Point 회원 최대 40% 할인</p>
+							<div class="date">2021.07.01~2021.07.31</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="d_day">상시</span>
+						<figure class="thumbnail">
+							<img class="ratio" src="/assets/app/img/common/ratio_event.gif" alt="">
+							<span class="img" style="background-image:url('https://www.h-point.co.kr/cma/image/1000296783.nhd');"></span>
+						</figure>
+						<div class="wrap_txt">
+							<p class="subject elps2">천만회원 감사제 1만P 할인쿠폰 증정</p>
+							<div class="date">2021.07.01~2021.07.31</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="d_day">D-14</span>
+						<figure class="thumbnail">
+							<img class="ratio" src="/assets/app/img/common/ratio_event.gif" alt="">
+							<span class="img" style="background-image:url('https://www.h-point.co.kr/cma/image/1000214686.nhd');"></span>
+						</figure>
+						<div class="wrap_txt">
+							<p class="subject elps2">현대백화점 동행세일 날갯짓 하나가 만드는 내일</p>
+							<div class="date">2021.07.01~2021.07.31</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="d_day">D-14</span>
+						<figure class="thumbnail">
+							<img class="ratio" src="/assets/app/img/common/ratio_event.gif" alt="">
+							<span class="img" style="background-image:url('https://www.h-point.co.kr/cma/image/1000303357.nhd');"></span>
+						</figure>
+						<div class="wrap_txt">
+							<p class="subject elps2">인기 뮤지컬 &lt;비틀쥬스&gt; H.Point 회원 최대 40% 할인</p>
+							<div class="date">2021.07.01~2021.07.31</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="d_day">D-14</span>
+						<figure class="thumbnail">
+							<img class="ratio" src="/assets/app/img/common/ratio_event.gif" alt="">
+							<span class="img" style="background-image:url('https://www.h-point.co.kr/cma/image/1000296783.nhd');"></span>
+						</figure>
+						<div class="wrap_txt">
+							<p class="subject elps2">천만회원 감사제 1만P 할인쿠폰 증정</p>
+							<div class="date">2021.07.01~2021.07.31</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="d_day">D-14</span>
+						<figure class="thumbnail">
+							<img class="ratio" src="/assets/app/img/common/ratio_event.gif" alt="">
+							<span class="img" style="background-image:url('https://www.h-point.co.kr/cma/image/1000214686.nhd');"></span>
+						</figure>
+						<div class="wrap_txt">
+							<p class="subject elps2">인기 뮤지컬 &lt;비틀쥬스&gt; H.Point 회원 최대 40% 할인</p>
+							<div class="date">2021.07.01~2021.07.31</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="d_day">D-14</span>
+						<figure class="thumbnail">
+							<img class="ratio" src="/assets/app/img/common/ratio_event.gif" alt="">
+							<span class="img" style="background-image:url('https://www.h-point.co.kr/cma/image/1000322273.nhd');"></span>
+						</figure>
+						<div class="wrap_txt">
+							<p class="subject elps2">현대백화점 동행세일 날갯짓 하나가 만드는 내일</p>
+							<div class="date">2021.07.01~2021.07.31</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="d_day">D-14</span>
+						<figure class="thumbnail">
+							<img class="ratio" src="/assets/app/img/common/ratio_event.gif" alt="">
+							<span class="img" style="background-image:url('https://www.h-point.co.kr/cma/image/1000296783.nhd');"></span>
+						</figure>
+						<div class="wrap_txt">
+							<p class="subject elps2">천만회원 감사제 1만P 할인쿠폰 증정</p>
+							<div class="date">2021.07.01~2021.07.31</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	
+		<br><br><br>
+
+		<div class="board_list_type2">
+			<ul class="clear">
+				<li>
+					<a href="#">
+						<span class="num">999</span>
+						<span class="tag">공지</span>
+						<p class="subject">개인정보 처리방침 변경 안내</p>
+						<div class="date">2021.07.01</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="num">09</span>
+						<span class="tag">공지</span>
+						<p class="subject">개인정보 처리방침 변경 안내</p>
+						<div class="date">2021.07.01</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="num">08</span>
+						<span class="tag">공지</span>
+						<p class="subject">개인정보 처리방침 변경 안내</p>
+						<div class="date">2021.07.01</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="num">07</span>
+						<span class="tag">공지</span>
+						<p class="subject">현대HCN과의 H.Point 제휴 서비스 종료 사전 안내</p>
+						<div class="date">2021.07.01</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="num">06</span>
+						<span class="tag">공지</span>
+						<p class="subject">개인정보 처리방침 변경 안내</p>
+						<div class="date">2021.07.01</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<br><br><br>
+
+
+		<!-------------------- banner ---------------------->
+		<h2>banner</h2>
+
+		<h3>[type1]</h3>
+		<!-- 배너 -->
+		<section class="banner_type1">
+			<div class="layout1">
+				<a href="#" target="_blank">
+					<img class="pc_only" src="/assets/app/img/@temp/img_temp_banner1.jpg" alt="">
+					<img class="pc_none" src="/assets/app/img/@temp/mo/img_temp_banner1.jpg" alt="">
+				</a>
+			</div>
+		</section>
+		<!--// 배너 -->
+
+		<br><br><br>
+		<h3>[type2]</h3>
+		<div class="banner_type2" style="max-width: 600px;">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="/assets/app/img/@temp/img_temp_banner3.jpg" alt="">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="/assets/app/img/@temp/img_temp_banner3.jpg" alt="">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="/assets/app/img/@temp/img_temp_banner3.jpg" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-pagination type2"></div>
+		</div>
+		<script>
+			page.banner.bannerSlide2();
+		</script>
+
+
+
+		<!-------------------- pagination ---------------------->
+		<h2>pagination</h2>
+
+		<!-- paging -->
+		<div class="wrap_paging">
+			<pagination>
+				<ul class="pagination">
+					<li class="pagination-prev page-item"><a class="page-link" href="#"></a></li>
+					<li class="pagination-page page-item active"><a class="page-link" href="#">1</a></li>
+					<li class="pagination-page page-item"><a class="page-link" href="#">2</a></li>
+					<li class="pagination-page page-item"><a class="page-link" href="#">3</a></li>
+					<li class="pagination-page page-item"><a class="page-link" href="#">4</a></li>
+					<li class="pagination-page page-item"><a class="page-link" href="#">5</a></li>
+					<li class="pagination-next page-item"><a class="page-link" href="#"></a></li>
+				</ul>
+			</pagination>
+		</div>
+		<!--// paging -->
+		
+
+		<!-------------------- swiper ---------------------->
+		<h2>swiper</h2>
+
+		<h3>[indicator]</h3>
+		
+		<div style="display: inline-block; padding: 20px; background: #4e2bf4;">			
+			<!-- Add Pagination -->
+			<div class="swiper-pagination type1">
+				<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+				<span class="swiper-pagination-bullet"></span>
+				<span class="swiper-pagination-bullet"></span>
+			</div>
+			<br>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination type2">
+				<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+				<span class="swiper-pagination-bullet"></span>
+				<span class="swiper-pagination-bullet"></span>
+			</div>
+		</div>
+		<br><br>
+
+		<!-- Add Pagination -->
+		<div class="swiper-pagination type3" style="max-width: 100px;">
+			<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+			<span class="swiper-pagination-bullet"></span>
+			<span class="swiper-pagination-bullet"></span>
+		</div>
+
+		<br><br>
+		
+		<h3>[next/prev]</h3>
+		<div style="display: inline-block; padding: 20px; background: #4e2bf4;">
+
+			<!-- Add Arrows -->
+			<div style="position: relative; width: 200px;">
+				<div class="swiper-button-next type1"></div>
+				<div class="swiper-button-prev type1"></div>
+			</div>
+
+		</div>
+		
+		<br><br>
+
+		<h3>[tools]</h3>
+		<div class="swiper-tools">
+			<div class="swiper-pagination">
+				<span class="swiper-pagination-progressbar-fill" style="transform: translate3d(0px, 0px, 0px) scaleX(0.333333) scaleY(1);"></span>
+			</div>
+			<div class="swiper-count">
+				<span class="active_num">1</span>
+				<span>-</span>
+				<span class="all_num">5</span>
+			</div>
+			<button type="button" class="btn-swiper-play paused"><span>재생/정지</span></button>
+		</div>
+		<br><br><br>
+
+
+		<!-------------------- popup ---------------------->
+		<h2>popup</h2>
+		<p class="desc_guide">.pop_guide 클래스를 지우고, 고유클래스를 사용하세요. (ex. pop_hdcard_info)</p>
+		<br>
+
+		<h3>[모달팝업]</h3>
+		<p class="desc_guide">- 팝업 클래스 : type_modal (반드시 popup_ui 클래스 다음에 적어줘야함!)</p>
+		<!-- <p class="desc_guide">- dim 클릭시 팝업 닫기 : .pop_container에 .dimCloseArea 클래스 추가</p> -->
+		<button type="button" onclick="commonPub.modalPopOpen(this);" data-pop="pop_guide_modal" style="color: blue;text-decoration: underline;">
+			<span>모달팝업 열기</span>
+		</button>
+		
+		<!-- 팝업 : 팝업제목 -->
+		<div class="popup_ui type_modal pop_guide_modal" style="display: none;">
+			<div class="dim_full"></div>
+			<div class="pop_container">
+				<div class="pop_layer">
+					<div class="pop_tit">팝업제목</div>
+					<div class="pop_body">
+						
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quo mollitia id ipsum, dicta aspernatur at commodi dolorum debitis recusandae vitae tempora quisquam dolor maiores, sed illum iure natus odio.
+						
+					</div>
+					<button class="btn_pop_close" type="button" onclick="commonPub.layerPopClose(this);"><span class="hidden">레이어 닫기</span></button>
+				</div>
+			</div>
+		</div>
+		<!--// 팝업 : 팝업제목 -->
+
+		<br><br><br>
+		<h3>[풀페이지 팝업]</h3>
+		<p class="desc_guide">- 팝업 클래스 : type_full (반드시 popup_ui 클래스 다음에 적어줘야함!)</p>
+		<button type="button" onclick="commonPub.fullPopOpen(this);" data-pop="pop_guide_full" style="color: blue;text-decoration: underline;">
+			<span>풀페이지 팝업 열기</span>
+		</button>
+		
+		<!-- 팝업 : 팝업제목 -->
+		<div class="popup_ui type_full pop_guide_full" style="display: none;">
+			<div class="dim_full"></div>
+			<div class="pop_container">
+				<div class="pop_layer">
+					<div class="pop_tit">팝업제목</div>
+					<div class="pop_body">
+						
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quo mollitia id ipsum, dicta aspernatur at commodi dolorum debitis recusandae vitae tempora quisquam dolor maiores, sed illum iure natus odio.
+						
+					</div>
+					<button class="btn_pop_close" type="button" onclick="commonPub.layerPopClose(this);"><span class="hidden">레이어 닫기</span></button>
+				</div>
+			</div>
+		</div>
+		<!--// 팝업 : 팝업제목 -->
+
+
+
+		<br><br><br>
+
+
+
+		<!-------------------- font test ---------------------->
+
+		<h2>font test</h2>
+		<style>
+			.f-test-sub {font-family: 'HGGGothicssi'; font-size: 30px;}
+			.f-test {font-family: 'Noto Sans KR'; font-size: 18px;}
+		</style>
+		<p class="f-test" style="font-weight: 100;">Thin - 가나다라마바사아자차카타파하ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890‘?’“!”(%)[#]{@}/&\-+÷×=®©$€£¥¢:;,.*</p>
+		<p class="f-test" style="font-weight: 300;">Light - 가나다라마바사아자차카타파하ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890‘?’“!”(%)[#]{@}/&\-+÷×=®©$€£¥¢:;,.*</p>
+		<p class="f-test" style="font-weight: 350;">Demilight - 가나다라마바사아자차카타파하ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890‘?’“!”(%)[#]{@}/&\-+÷×=®©$€£¥¢:;,.*</p>
+		<p class="f-test" style="font-weight: 400;">Regular - 가나다라마바사아자차카타파하ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890‘?’“!”(%)[#]{@}/&\-+÷×=®©$€£¥¢:;,.*</p>
+		<p class="f-test" style="font-weight: 500;">Medium - 가나다라마바사아자차카타파하ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890‘?’“!”(%)[#]{@}/&\-+÷×=®©$€£¥¢:;,.*</p>
+		<p class="f-test" style="font-weight: 700;">Bold - 가나다라마바사아자차카타파하ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890‘?’“!”(%)[#]{@}/&\-+÷×=®©$€£¥¢:;,.*</p>
+		<p class="f-test" style="font-weight: 900;">Black - 가나다라마바사아자차카타파하ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890‘?’“!”(%)[#]{@}/&\-+÷×=®©$€£¥¢:;,.*</p>
+		<br><br><br>
+
+		<p class="f-test-sub" style="font-weight: 100;">00g - 가나다라마바사아자차카타파하ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890‘?’“!”(%)[#]{@}/&\-+÷×=®©$€£¥¢:;,.*</p>
+		<p class="f-test-sub" style="font-weight: 200;">20g - 가나다라마바사아자차카타파하ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890‘?’“!”(%)[#]{@}/&\-+÷×=®©$€£¥¢:;,.*</p>
+		<p class="f-test-sub" style="font-weight: 400;">40g - 가나다라마바사아자차카타파하ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890‘?’“!”(%)[#]{@}/&\-+÷×=®©$€£¥¢:;,.*</p>
+		<p class="f-test-sub" style="font-weight: 600;">60g - 가나다라마바사아자차카타파하ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890‘?’“!”(%)[#]{@}/&\-+÷×=®©$€£¥¢:;,.*</p>
+		<p class="f-test-sub" style="font-weight: 800;">80g - 가나다라마바사아자차카타파하ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890‘?’“!”(%)[#]{@}/&\-+÷×=®©$€£¥¢:;,.*</p>
+		<p class="f-test-sub" style="font-weight: 900;">99g - 가나다라마바사아자차카타파하ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890‘?’“!”(%)[#]{@}/&\-+÷×=®©$€£¥¢:;,.*</p>
+		<br><br><br>
+		
+	</div>
+	
+</body>
+</html>
