@@ -1,0 +1,94 @@
+/**************************** footer **************************/
+#footer {}
+
+/* pageTop */
+#footer .pageTop {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+#footer .pageTop .btn_top {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #d1d1d1;
+    background-color: #fff;
+    opacity: 0.8;
+    background: url('/src/assets/app/images/common/ic_top.png') no-repeat center center ;
+    background-size: 20px;
+    text-indent: -99999px;
+    overflow: hidden;
+    z-index: 100;
+    transition: .3s;
+}
+#footer .pageTop .btn_top:hover {
+    background-color: #f8f8f8;
+    border: 1px solid #ebebeb;
+}
+#footer .pageTop.meetft {
+    position: absolute;
+    bottom: 260px;
+}
+
+/* footer */
+#footer .footer {
+    border-top: 1px solid #d2d2d2;
+    padding: 0 67px;
+    height: 200px;
+}
+#footer .inner {
+    position: relative;
+    padding: 45px 285px;
+}
+#footer .logo {
+    position: absolute;
+    left: 0;
+    top: 45px;
+    width: 80px;
+    height: 75px;
+    background: url('/src/assets/app/images/common/logo2.png') no-repeat center center;
+    background-size: 80px;
+    text-indent: -99999px;
+}
+#footer .family_site {
+    position: absolute;
+    right: 0;
+    top: 60px;
+}
+#footer .btn_family {
+    position: relative;
+    width: 315px;
+    height: 65px;
+    line-height: 65px;
+    padding: 0 30px 0 40px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 18px 0 rgb(0 0 0 / 5%);
+    text-align: left;
+    z-index: 2;
+}
+#footer .btn_family::after {
+    content: '';
+    width: 14px;
+    height: 9px;
+    background: url('/src/assets/app/images/common/ic_arrow1.png');
+    background-size: contain;
+    position: absolute;
+    right: 30px;
+    top: 28px;
+}
+#footer .family_list {
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 20px 0 0 40px;
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    overflow-y: scroll;
+    z-index: 1;
+}
+

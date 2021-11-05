@@ -1,0 +1,12 @@
+* {
+    font-family: 'Noto Sans KR';
+    font-weight: 400;
+    font-style: normal;
+}
+
+span {
+    font-size: inherit;
+    color: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+}
