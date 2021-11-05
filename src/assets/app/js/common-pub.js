@@ -1,0 +1,5 @@
+var commonPub = {
+	common : function(){
+
+	},
+}
