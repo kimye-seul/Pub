@@ -1,0 +1,15 @@
+:root {
+	/* color */
+	--c-basic: #000;
+
+    --c-blue1: #23afe4;
+
+	--c-gray1: #7d7d7d;
+	--c-gray2: #aaa;
+	
+	/* font */
+	--font-family: 'Noto Sans KR';
+
+	/* placeholder */
+	--c-placeholder: #808080;
+}
