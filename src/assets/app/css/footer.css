@@ -2,166 +2,71 @@
 #footer {}
 
 /* pageTop */
-#footer .pageTop {
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-}
-#footer .pageTop .btn_top {
-    width: 60px;
-    height: 60px;
-    border: 1px solid #d1d1d1;
-    background-color: #fff;
-    opacity: 0.8;
-    background: url('/src/assets/app/images/common/ic_top.png') no-repeat center center ;
-    background-size: 20px;
-    text-indent: -99999px;
-    overflow: hidden;
-    z-index: 100;
-    transition: .3s;
-}
-#footer .pageTop .btn_top:hover {
-    background-color: #f8f8f8;
-    border: 1px solid #ebebeb;
-}
-#footer .pageTop.meetft {
-    position: absolute;
-    bottom: 260px;
-}
+#footer .pageTop {position: fixed;bottom: 50px;right: 50px;}
+#footer .pageTop .btn_top {width: 60px;height: 60px;border: 1px solid #d1d1d1;opacity: 0.8;background:#fff url('/src/assets/app/images/common/ic_top.png') no-repeat center center ;background-size: 20px;text-indent: -99999px;overflow: hidden;transition: .3s;}
+#footer .pageTop .btn_top:hover {background-color: #f8f8f8;border: 1px solid #ebebeb;}
+#footer .pageTop.meetft {position: absolute;bottom: 260px;}
 
 /* footer */
-#footer .footer {
-    border-top: 1px solid #d2d2d2;
-    padding: 0 67px;
-    height: 200px;
-}
-#footer .inner {
-    position: relative;
-    padding: 45px 285px;
-}
+#footer .footer {border-top: 1px solid #d2d2d2;padding: 0 3.5% 50px;min-height: 200px;}
+#footer .inner {position: relative;padding: 45px 0 0 16.11%;}
 
 /* 로고 */
-#footer .logo {
-    position: absolute;
-    left: 0;
-    top: 45px;
-    width: 80px;
-    height: 75px;
-    background: url('/src/assets/app/images/common/logo2.png') no-repeat center center;
-    background-size: 80px;
-    text-indent: -99999px;
-}
+#footer .logo {position: absolute;left: 0;top: 45px;width: 80px;height: 75px;background: url('/src/assets/app/images/common/logo2.png') no-repeat center center;background-size: 80px;text-indent: -99999px;}
+
+/* 푸터 메뉴 */
+#footer .ft_menu li {float: left;margin-right: 30px;}
+#footer .ft_menu li:last-child {margin-right: 0;}
+#footer .ft_menu li a {font-size: 16px;font-weight: 500;transition: .3s;}
+#footer .ft_menu li:hover a {color: var(--c-main1);}
+
+/* 푸터 텍스트 */
+#footer .ft_info {margin-top: 30px;font-size: 15px;color: var(--c-gray1);}
+#footer .copyright {font-size: 14px;color: var(--c-gray1);}
 
 /* 유틸 */
-#footer .ft_util {
-    position: absolute;
-    right: 435px;
-    top: 45px;
-
-}
-#footer .ft_util li {
-    position: relative;
-    float: left;
-    padding: 0 27px;
-    text-align: center;
-}
-#footer .ft_util li:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    width: 1px;
-    height: 20px;
-    top: 20px;
-    right: 0;
-    background-color: #eaeaea;
-}
-#footer .ft_util li:hover .ic_hover {
-    opacity: 1;
-}
-#footer .ft_util li:hover span {
-    color: var(--c-basic);
-}
-#footer .ft_util .ic_box {
-    position: relative;
-    display: block;
-    width: 58px;
-    height: 58px;
-    border-radius: 50%;
-    background-color: #fff;
-    box-shadow: 0 0 18px 0 rgba(0,0,0,0.1);
-    margin: 0 auto;
-}
-#footer .ft_util .ic_box img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-#footer .ft_util .ic_hover {
-    opacity: 0;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transition: .3s;
-}
-#footer .ft_util li span {
-    display: inline-block;
-    font-size: 16px;
-    color: var(--c-gray1);
-    margin-top: 15px;
-    transition: .3s;
-}
+#footer .ft_util {position: absolute;right: 24.6%;top: 45px;}
+#footer .ft_util li {position: relative;display: inline-block;padding: 0 23px;text-align: center;}
+#footer .ft_util li:first-child {padding-left: 0;}
+#footer .ft_util li:last-child {padding-right: 0;}
+#footer .ft_util li:not(:last-child)::after {content: '';position: absolute;width: 1px;height: 20px;top: 20px;right: 0;background-color: #eaeaea;}
+#footer .ft_util li:hover .ic_hover {opacity: 1;}
+#footer .ft_util li:hover span {color: var(--c-basic);}
+#footer .ft_util .ic_box {position: relative;display: block;width: 58px;height: 58px;border-radius: 50%;background-color: #fff;box-shadow: 0 0 18px 0 rgba(0,0,0,0.1);margin: 0 auto;}
+#footer .ft_util .ic_box img {width: 100%;height: 100%;object-fit: contain;}
+#footer .ft_util .ic_hover {opacity: 0;position: absolute;left: 0;top: 0;transition: .3s;}
+#footer .ft_util li span {display: inline-block;font-size: 16px;color: var(--c-gray1);font-weight: 500;margin-top: 15px;transition: .3s;}
 
 
 /* 패밀리사이트 */
-#footer .family_site {
-    position: absolute;
-    right: 0;
-    top: 60px;
+#footer .family_site {position: absolute;right: 0;top: 60px;width: 315px;}
+#footer .btn_family {position: relative;width: 100%;height: 65px;line-height: 65px;padding: 0 30px 0 40px;font-size: 16px;font-weight: 700;border-radius: 40px;background-color: #fff;box-shadow: 0 0 18px 0 rgb(0 0 0 / 5%);text-align: left;z-index: 2;}
+#footer .btn_family::after {content: '';width: 14px;height: 9px;background: url('/src/assets/app/images/common/ic_arrow1.png');background-size: contain;position: absolute;right: 30px;top: 28px;transition: .3s;}
+#footer .btn_family.on::after {transform: rotate(-180deg);}
+#footer .family_list {width: 100%;background-color: #fff;border-top-left-radius: 40px;border-top-right-radius: 40px;padding: 20px 0 70px 40px;position: absolute;left: 0;bottom: 32px;z-index: 1;display: none;}
+#footer .family_list ul {height: 200px;}
+#footer .family_list li {font-size: 18px;color: var(--c-gray2);padding: 5px 0;}
+
+@media screen and (max-width:1680px) {
+    /* footer */
+    #footer .inner {position: relative;padding: 45px 0 0 8%;}
+
+    /* 유틸 */
+    #footer .ft_util {right: 23%}
+    #footer .ft_util li {padding: 0 15px;}
+    #footer .family_site {width: 21%;}
 }
-#footer .btn_family {
-    position: relative;
-    width: 315px;
-    height: 65px;
-    line-height: 65px;
-    padding: 0 30px 0 40px;
-    font-size: 16px;
-    font-weight: 700;
-    border-radius: 40px;
-    background-color: #fff;
-    box-shadow: 0 0 18px 0 rgb(0 0 0 / 5%);
-    text-align: left;
-    z-index: 2;
-}
-#footer .btn_family::after {
-    content: '';
-    width: 14px;
-    height: 9px;
-    background: url('/src/assets/app/images/common/ic_arrow1.png');
-    background-size: contain;
-    position: absolute;
-    right: 30px;
-    top: 28px;
-    transition: .3s;
-}
-#footer .btn_family.on::after {
-    transform: rotate(-180deg);
-}
-#footer .family_list {
-    width: 100%;
-    background-color: #fff;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    padding: 20px 0 70px 40px;
-    position: absolute;
-    left: 0;
-    bottom: 32px;
-    z-index: 1;
-    display: none;
-}
-#footer .family_list ul {
-    height: 200px;
-}
-#footer .family_list li {
-    font-size: 18px;
-    color: var(--c-gray2);
-    padding: 5px 0;
+
+@media screen and (max-width:1370px) {
+    #footer .inner {padding: 45px 0 0 0;}
+    
+    /* 로고 */
+    #footer .logo {position: static}
+
+     /* 유틸 */
+     #footer .ft_util {right: 0;}
+
+    /* 패밀리사이트 */
+    #footer .family_site {bottom: 0;top: auto;width: 315px;}
+
 }
