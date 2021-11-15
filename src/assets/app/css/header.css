@@ -1,0 +1,14 @@
+/**************************** header **************************/
+#header .header {padding: 0 70px;}
+#header .wrap_header {width: 100%;position: relative;}
+
+#header .logo {position: absolute;left: 0;top: 20px;}
+#header .logo_hover {opacity: 0;position: absolute;left: 0;top: 0;transition: .3s;}
+
+#gnb ul {text-align: center;}
+#gnb ul > li {display: inline-block;padding: 0 30px;position: relative;}
+#gnb ul .depth1 a {position: relative;display: block;line-height: 90px;font-size: 16px;font-weight: 700;color: #fff;transition: .3s;}
+#gnb ul .depth1 a::after {content: '';width: 100%;}
+#gnb ul .depth1:hover a {color: var(--c-main1);}
+
+#gnb ul .depth2 {position: absolute;left: 0;top: 90px;width: 100%;}

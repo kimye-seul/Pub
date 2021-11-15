@@ -1,4 +1,6 @@
-/* 분기점 1280px */
+/* Tablet 분기점 1280px */
+/* 분기점 989px */
+/* MO 분기점 767px */
 .fl {float:left}
 .fr {float:right}
 .clear:after {content:".";display:block;clear:both;height:0;font-size:0;visibility:hidden;}
@@ -29,7 +31,7 @@
 
 * {font-family: 'Noto Sans KR';font-weight: 400;font-style: normal;letter-spacing: -.5px;}
 span {font-size: inherit;color: inherit;font-weight: inherit;font-family: inherit;}
-
+body {min-width: 280px;}
 /* z-index */
 #footer .pageTop {z-index: 100;}
 /* 폰트스타일 */
